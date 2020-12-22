@@ -1,0 +1,35 @@
+{
+  "users": [
+    {
+      "user_id": 1,
+      "name": "Luiz Fernando",
+      "type": "Customer"
+    },
+    {
+      "user_id": 2,
+      "name": "Márcio",
+      "type": "Employee"
+    }
+  ],
+  "appointments": [
+    {
+      "appointment_id": 1,
+      "food": {
+        "food_id": 1,
+        "name": "X-burguer",
+        "quantity": 1,
+        "price": 19.90
+      },
+      "date": "2020-12-17",
+      "comments": "Remover a cebola"
+    }
+  ],
+  "foods": [
+    {
+      "food_id": 1,
+      "name": "X-burguer",
+      "stock": 10,
+      "price": 19.90
+    }
+  ]
+}

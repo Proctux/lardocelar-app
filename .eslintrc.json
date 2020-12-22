@@ -30,7 +30,11 @@
     ],
     "rules": {
         "no-use-before-define": "off",
+        "no-confusing-arrow": "off",
+        "implicit-arrow-linebreak": "off",
         "react-hooks/rules-of-hooks": "error",
+        "react/jsx-props-no-spreading": "off",
+        "react/prop-types": "off",
         "prettier/prettier": "error",
         "react-hooks/exhaustive-deps": "warn",
         "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
