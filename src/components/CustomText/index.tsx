@@ -4,13 +4,13 @@ import { TextProps } from 'react-native';
 import { Container, Text } from './style';
 
 interface CustomTextProps extends TextProps {
-  color: string;
-  size: number;
+  color?: string;
+  fontSize?: number;
 }
 
-const CustomText: React.FC<CustomTextProps> = ({ children, color }) => (
+const CustomText: React.FC<CustomTextProps> = ({ children, color, fontSize, ...rest }) => (
   <Container>
-    <Text color={color}>{children}</Text>
+    <Text color={color} fontSize={fontSize} {...rest}>{children}</Text>
   </Container>
 );
 
