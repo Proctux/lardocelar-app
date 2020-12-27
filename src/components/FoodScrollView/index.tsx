@@ -26,12 +26,12 @@ const FoodScrollView: React.FC<FoodScrollViewProps> = ({ label, type, foodsData 
   )
 
   return (
-        <FlatList
-          data={foodsData}
-          renderItem={renderItem}
-          keyExtractor={item => item.name}
-          horizontal={true}
-        />
+      <FlatList
+      data={foodsData}
+      renderItem={renderItem}
+      keyExtractor={item => item.name}
+      horizontal={true}
+    />
   )
 };
 
