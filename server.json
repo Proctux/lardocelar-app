@@ -1,0 +1,55 @@
+{
+  "users": [
+    {
+      "user_id": 1,
+      "name": "Luiz Fernando",
+      "type": "Customer",
+      "password": "123456",
+      "email": "luiz.teste@teste.com.br"
+    },
+    {
+      "user_id": 2,
+      "name": "Márcio",
+      "type": "Employee",
+      "password": "123456",
+      "email": "marcio.teste@teste.com.br"
+    }
+  ],
+  "appointments": [
+    {
+      "appointment_id": 1,
+      "food": {
+        "food_id": 1,
+        "name": "X-burguer",
+        "quantity": 1,
+        "price": 19.9
+      },
+      "date": "2020-12-17",
+      "comments": "Remover a cebola"
+    }
+  ],
+  "foods": [
+    {
+      "food_id": 1,
+      "name": "X-burguer",
+      "stock": 10,
+      "price": 19.9
+    },
+    {
+      "food_id": 2,
+      "name": "Cafezinho",
+      "stock": 10,
+      "price": 19.9
+    },
+    {
+      "food_id": 3,
+      "name": "Paozinho",
+      "stock": 10,
+      "price": 19.9
+    }
+  ],
+  "login": {
+    "email": "luiz.teste@teste.com.br",
+    "password": "123456"
+  }
+}
