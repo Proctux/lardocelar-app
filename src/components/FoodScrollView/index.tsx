@@ -19,7 +19,7 @@ interface FoodScrollViewProps {
 }
 
 const FoodScrollView: React.FC<FoodScrollViewProps> = ({ label, type, foodsData }) => {
-  const renderItem = ({ item }) => (
+  const renderItem = ({ item }: any) => (
     <FoodContainer key={item.food_id}>
       <FoodImage source={coffeImg} />
     </FoodContainer>

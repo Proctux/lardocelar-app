@@ -1,7 +1,7 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import Home from '../pages/Home';
+import Login from '../pages/Login';
 
 const Auth = createStackNavigator();
 
@@ -11,8 +11,9 @@ const AppRoutes: React.FC = () => (
       headerShown: false,
       cardStyle: { backgroundColor: '#7E2F37' },
     }}
+    initialRouteName="Login"
   >
-    <Auth.Screen name="Home" component={Home} />
+    <Auth.Screen name="Login" component={Login} />
   </Auth.Navigator>
 );
 

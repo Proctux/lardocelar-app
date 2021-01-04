@@ -5,14 +5,16 @@
       "name": "Luiz Fernando",
       "type": "Customer",
       "password": "123456",
-      "email": "luiz.teste@teste.com.br"
+      "email": "luiz.teste@teste.com.br",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/45155140?s=460&u=d66274e891d5e817c5e826ef999510f4cfd67a43&v=4"
     },
     {
       "user_id": 2,
       "name": "Márcio",
       "type": "Employee",
       "password": "123456",
-      "email": "marcio.teste@teste.com.br"
+      "email": "marcio.teste@teste.com.br",
+      "avatar_url": "https://omnibees.com/blog/wp-content/uploads/2018/05/41e2d40b46f2c74-940x510.jpg"
     }
   ],
   "appointments": [
@@ -33,19 +35,22 @@
       "food_id": 1,
       "name": "X-burguer",
       "stock": 10,
-      "price": 19.9
+      "price": 19.9,
+      "food_picture": "https://s2.glbimg.com/hW3jyA4tlj9wtikurwRzBshsbhw=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/Y/B/PWYOhaS2aTE3ilWihf8w/g1-clinipam-20-cafe-da-manha-capa.jpg"
     },
     {
       "food_id": 2,
       "name": "Cafezinho",
       "stock": 10,
-      "price": 19.9
+      "price": 19.9,
+      "food_picture": "https://s3.amazonaws.com/jacotei-static-img/guia/wp-content/uploads/2019/05/07165735/cafe-da-manha.jpg"
     },
     {
       "food_id": 3,
       "name": "Paozinho",
       "stock": 10,
-      "price": 19.9
+      "price": 19.9,
+      "food_picture": "https://saude.abril.com.br/wp-content/uploads/2016/10/trocas-cafe-da-manha-11.jpg"
     }
   ],
   "login": {

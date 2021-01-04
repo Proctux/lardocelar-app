@@ -4,6 +4,7 @@ import { Image } from 'react-native';
 import avatarImg from '../../assets/avatarImg.png';
 import CustomText from '../../components/CustomText';
 import FoodScrollView from '../../components/FoodScrollView';
+import Flex from '../../components/Flex';
 import api from '../../services/api';
 
 import { Container, HeaderContainer, ImageContainer, HeaderContainerFields, BodyContainer } from './style';
@@ -30,14 +31,16 @@ const Home: React.FC = () => {
 
   return (
     <Container>
-      <HeaderContainer>
-        <ImageContainer source={avatarImg} />
+      <Flex marginBottom={40} alignItems="center" justifyContent="center">
+        <HeaderContainer>
+          <ImageContainer source={avatarImg} />
 
-        <HeaderContainerFields>
-          <CustomText color="#CCB38D">Hóspede: Luiz Fernando</CustomText>
-          <CustomText color="#CCB38D" fontSize={18}>Quarto: 301</CustomText>
-        </HeaderContainerFields>
-      </HeaderContainer>
+          <HeaderContainerFields>
+            <CustomText color="#CCB38D">Hóspede: Luiz Fernando</CustomText>
+            <CustomText color="#CCB38D" fontSize={18}>Quarto: 301</CustomText>
+          </HeaderContainerFields>
+        </HeaderContainer>
+      </Flex>
 
       <BodyContainer>
         <FoodScrollView label="Café da manhã" type="breakfast" foodsData={foods} />
