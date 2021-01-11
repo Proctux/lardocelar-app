@@ -8,9 +8,16 @@ interface CustomTextProps extends TextProps {
   fontSize?: number;
 }
 
-const CustomText: React.FC<CustomTextProps> = ({ children, color, fontSize, ...rest }) => (
+const CustomText: React.FC<CustomTextProps> = ({
+  children,
+  color = '#CCB38D',
+  fontSize,
+  ...rest
+}) => (
   <Container>
-    <Text color={color} fontSize={fontSize} {...rest}>{children}</Text>
+    <Text color={color} fontSize={fontSize} {...rest}>
+      {children}
+    </Text>
   </Container>
 );
 

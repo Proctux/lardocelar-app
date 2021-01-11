@@ -6,3 +6,8 @@ export const Container = styled.View`
   justify-content: center;
   padding: 40px;
 `;
+
+export const CreateAccountButton = styled.TouchableOpacity`
+  align-items: center;
+  justify-content: center;
+`;

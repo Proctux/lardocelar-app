@@ -4,6 +4,7 @@ import {
   KeyboardAvoidingView,
   Platform,
   ScrollView,
+  Text,
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { useForm, Controller } from 'react-hook-form';
@@ -16,7 +17,7 @@ import CustomText from '../../components/CustomText';
 import loginHelper from '../../utils/helpers/loginHelper';
 import { useAuth } from '../../hooks/auth';
 
-import { Container } from './style';
+import { Container, CreateAccountButton } from './style';
 import Button from '../../components/Button';
 
 interface SignInFormData {
@@ -28,7 +29,7 @@ const Login: React.FC = () => {
   const { control, handleSubmit, errors } = useForm<SignInFormData>();
 
   const navigation = useNavigation();
-  const { signIn, user } = useAuth();
+  const { signIn } = useAuth();
 
   const defaultValues = loginHelper.createDefaultValues();
 
@@ -37,8 +38,6 @@ const Login: React.FC = () => {
       const { email, password } = data;
 
       await signIn({ email, password });
-
-      console.log(user.id);
 
       navigation.navigate('Home');
     } catch (err) {
@@ -114,6 +113,14 @@ const Login: React.FC = () => {
 
             <Flex marginTop={52}>
               <Button onPress={handleSubmit(onSubmit)}>Acessar</Button>
+            </Flex>
+
+            <Flex marginTop={24}>
+              <CreateAccountButton
+                onPress={() => navigation.navigate('SignUp')}
+              >
+                <Text>Criar uma conta</Text>
+              </CreateAccountButton>
             </Flex>
           </Container>
         </ScrollView>
