@@ -18,21 +18,25 @@ interface FoodScrollViewProps {
   foodsData: Food[];
 }
 
-const FoodScrollView: React.FC<FoodScrollViewProps> = ({ label, type, foodsData }) => {
-  const renderItem = ({ item }) => (
+const FoodScrollView: React.FC<FoodScrollViewProps> = ({
+  label,
+  type,
+  foodsData,
+}) => {
+  const renderItem = ({ item }: any) => (
     <FoodContainer key={item.food_id}>
-      <FoodImage source={coffeImg} />
+      <FoodImage source={{ uri: item.image }} />
     </FoodContainer>
-  )
+  );
 
   return (
-      <FlatList
+    <FlatList
       data={foodsData}
       renderItem={renderItem}
       keyExtractor={item => item.name}
-      horizontal={true}
+      horizontal
     />
-  )
+  );
 };
 
 export default FoodScrollView;

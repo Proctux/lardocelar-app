@@ -1,5 +1,10 @@
-import React, { useCallback } from 'react';
-import { Image, KeyboardAvoidingView, Platform, ScrollView } from 'react-native';
+import React from 'react';
+import {
+  Image,
+  KeyboardAvoidingView,
+  Platform,
+  ScrollView,
+} from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { useForm, Controller } from 'react-hook-form';
 
@@ -9,20 +14,26 @@ import Flex from '../../components/Flex';
 import Label from '../../components/Label';
 import CustomText from '../../components/CustomText';
 import loginHelper from '../../utils/helpers/loginHelper';
-import api from '../../services/api';
+import { useAuth } from '../../hooks/auth';
 
-import { Container } from './style';
+import {
+  Container,
+  CreateAccountButton,
+  ButtomContainer,
+  CreateAccountText,
+} from './style';
 import Button from '../../components/Button';
 
-type SignInFormData = {
+interface SignInFormData {
   email: string;
   password: string;
 }
 
 const Login: React.FC = () => {
-  const { control, handleSubmit, errors } = useForm<SignInFormData>();
+  const { control, handleSubmit } = useForm<SignInFormData>();
 
   const navigation = useNavigation();
+  const { signIn } = useAuth();
 
   const defaultValues = loginHelper.createDefaultValues();
 
@@ -30,22 +41,25 @@ const Login: React.FC = () => {
     try {
       const { email, password } = data;
 
-      const response = await api.get('login');
+      await signIn({ email, password });
 
-      if (response.data.email !== email || response.data.password !== password) {
-        throw new Error('Email or password is not matching')
-      }
-
-      navigation.navigate('Home')
+      navigation.navigate('Home');
     } catch (err) {
-      console.log(err)
+      console.log(err);
     }
-  }
+  };
 
   return (
     <>
-      <KeyboardAvoidingView style={{ flex: 1}} behavior={Platform.OS === 'ios' ? 'padding' : undefined} enabled >
-        <ScrollView keyboardShouldPersistTaps="handled" contentContainerStyle={{ flex: 1 }}>
+      <KeyboardAvoidingView
+        style={{ flex: 1 }}
+        behavior={Platform.OS === 'ios' ? 'padding' : undefined}
+        enabled
+      >
+        <ScrollView
+          keyboardShouldPersistTaps="handled"
+          contentContainerStyle={{ flex: 1 }}
+        >
           <Container>
             <Image source={logoImg} />
 
@@ -68,7 +82,7 @@ const Login: React.FC = () => {
                       autoCorrect={false}
                       returnKeyType="next"
                       onBlur={onBlur}
-                      onChangeText={value => onChange(value)}
+                      onChangeText={item => onChange(item)}
                       value={value}
                     />
                   )}
@@ -91,7 +105,7 @@ const Login: React.FC = () => {
                       secureTextEntry
                       returnKeyType="send"
                       onBlur={onBlur}
-                      onChangeText={value => onChange(value)}
+                      onChangeText={item => onChange(item)}
                       value={value}
                     />
                   )}
@@ -102,13 +116,23 @@ const Login: React.FC = () => {
             </Flex>
 
             <Flex marginTop={52}>
-              <Button onPress={handleSubmit(onSubmit)}>Acessar</Button>
+              <ButtomContainer>
+                <Button onPress={handleSubmit(onSubmit)}>Acessar</Button>
+              </ButtomContainer>
+            </Flex>
+
+            <Flex marginTop={24}>
+              <CreateAccountButton
+                onPress={() => navigation.navigate('SignUp')}
+              >
+                <CreateAccountText>Criar uma conta</CreateAccountText>
+              </CreateAccountButton>
             </Flex>
           </Container>
         </ScrollView>
       </KeyboardAvoidingView>
     </>
-  )
+  );
 };
 
 export default Login;
