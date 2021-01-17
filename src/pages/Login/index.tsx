@@ -4,7 +4,6 @@ import {
   KeyboardAvoidingView,
   Platform,
   ScrollView,
-  Text,
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { useForm, Controller } from 'react-hook-form';
@@ -17,7 +16,12 @@ import CustomText from '../../components/CustomText';
 import loginHelper from '../../utils/helpers/loginHelper';
 import { useAuth } from '../../hooks/auth';
 
-import { Container, CreateAccountButton } from './style';
+import {
+  Container,
+  CreateAccountButton,
+  ButtomContainer,
+  CreateAccountText,
+} from './style';
 import Button from '../../components/Button';
 
 interface SignInFormData {
@@ -26,7 +30,7 @@ interface SignInFormData {
 }
 
 const Login: React.FC = () => {
-  const { control, handleSubmit, errors } = useForm<SignInFormData>();
+  const { control, handleSubmit } = useForm<SignInFormData>();
 
   const navigation = useNavigation();
   const { signIn } = useAuth();
@@ -112,14 +116,16 @@ const Login: React.FC = () => {
             </Flex>
 
             <Flex marginTop={52}>
-              <Button onPress={handleSubmit(onSubmit)}>Acessar</Button>
+              <ButtomContainer>
+                <Button onPress={handleSubmit(onSubmit)}>Acessar</Button>
+              </ButtomContainer>
             </Flex>
 
             <Flex marginTop={24}>
               <CreateAccountButton
                 onPress={() => navigation.navigate('SignUp')}
               >
-                <Text>Criar uma conta</Text>
+                <CreateAccountText>Criar uma conta</CreateAccountText>
               </CreateAccountButton>
             </Flex>
           </Container>

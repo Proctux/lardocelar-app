@@ -4,6 +4,7 @@ export const Container = styled.View`
   flex: 1;
   justify-content: center;
   align-items: center;
+  padding: 24px;
 `;
 
 export const HeaderContainer = styled.View`
@@ -29,3 +30,7 @@ export const BodyContainer = styled.View`
   align-items: center;
 `;
 
+export const ButtomContainer = styled.View`
+  width: 100%;
+  height: 50px;
+`;

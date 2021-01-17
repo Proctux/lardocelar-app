@@ -1,10 +1,15 @@
-const createDefaultValues = () => {
-  const defaultValues = {
-    email: null,
-    password: null
-  }
+interface LoginFormDTO {
+  email: string;
+  password: string;
+}
 
-  return defaultValues
+const createDefaultValues = (): LoginFormDTO => {
+  const defaultValues = {
+    email: '',
+    password: '',
+  };
+
+  return defaultValues;
 };
 
 export default { createDefaultValues };

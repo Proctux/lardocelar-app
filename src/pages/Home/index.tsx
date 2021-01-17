@@ -13,6 +13,7 @@ import {
   ImageContainer,
   HeaderContainerFields,
   BodyContainer,
+  ButtomContainer,
 } from './style';
 import Button from '../../components/Button';
 import { useAuth } from '../../hooks/auth';
@@ -35,6 +36,7 @@ interface User {
 const Home: React.FC = () => {
   const [foods, setFoods] = useState<Food[]>([]);
   const [guest, setGuest] = useState<User>({} as User);
+  const [roomNumber, setRoomNumber] = useState();
 
   const { signOut, user } = useAuth();
 
@@ -50,6 +52,8 @@ const Home: React.FC = () => {
 
     loadFoods();
   }, []);
+
+  const showRoomNumber = () => {};
 
   return (
     <Container>
@@ -84,7 +88,9 @@ const Home: React.FC = () => {
         />
       </BodyContainer>
 
-      <Button onPress={() => signOut()}>Sair</Button>
+      <ButtomContainer>
+        <Button onPress={() => signOut()}>Sair</Button>
+      </ButtomContainer>
     </Container>
   );
 };
