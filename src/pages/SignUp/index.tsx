@@ -83,8 +83,8 @@ const SignUp: React.FC = () => {
         <Label>Quarto</Label>
         <Controller
           control={control}
-          render={({ onChange, onBlur, value }) => (
-            <RoomSelect onPress={onChange} />
+          render={({ onChange, value }) => (
+            <RoomSelect onApply={onChange} selectedRoom={value} />
           )}
           name="room_id"
           rules={{ required: 'É necessário preencher este campo' }}

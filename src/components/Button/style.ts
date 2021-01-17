@@ -2,7 +2,7 @@ import styled from 'styled-components/native';
 import { TouchableOpacity } from 'react-native';
 
 export const ButtonContainer = styled(TouchableOpacity)`
-  width: 100%;
+  flex: 1;
   height: 56px;
   background-color: #ccb38d;
 
