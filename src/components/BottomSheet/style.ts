@@ -26,6 +26,7 @@ export const ModalContainer = styled.View<ModalContainerProps>`
 
 export const Card = styled.TouchableOpacity`
   flex: 1;
+  flex-direction: row;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -34,6 +35,16 @@ export const Card = styled.TouchableOpacity`
   border-radius: 12px;
 
   height: 96px;
+`;
+
+export const CardImage = styled.Image`
+  height: 56px;
+  width: 56px;
+  border-radius: 12px;
+`;
+
+export const CardInfo = styled.View`
+  margin-left: 12px;
 `;
 
 export const CardText = styled.Text`

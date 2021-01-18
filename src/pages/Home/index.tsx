@@ -59,7 +59,7 @@ const Home: React.FC = () => {
     <Container>
       <Flex marginBottom={40} alignItems="center" justifyContent="center">
         <HeaderContainer>
-          <ImageContainer source={avatarImg} />
+          <ImageContainer source={{ uri: user.avatar }} />
 
           <HeaderContainerFields>
             <CustomText color="#CCB38D">{`Hospede: ${guest.name}`}</CustomText>
