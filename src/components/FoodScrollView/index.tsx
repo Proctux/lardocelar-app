@@ -1,9 +1,7 @@
 import React from 'react';
-import { FlatList } from 'react-native';
+import { FlatList, Text } from 'react-native';
 
 import { FoodContainer, FoodImage } from './style';
-
-import coffeImg from '../../assets/coffe.png';
 
 interface Food {
   food_id: number;
@@ -23,11 +21,16 @@ const FoodScrollView: React.FC<FoodScrollViewProps> = ({
   type,
   foodsData,
 }) => {
-  const renderItem = ({ item }: any) => (
-    <FoodContainer key={item.food_id}>
-      <FoodImage source={{ uri: item.image }} />
-    </FoodContainer>
-  );
+  const renderItem = ({ item }: any) =>
+    item.type === type ? (
+      <FoodContainer key={item.food_id}>
+        <FoodImage
+          source={{ uri: `http://localhost:3333/files/${item.image}` }}
+        />
+      </FoodContainer>
+    ) : (
+      <></>
+    );
 
   return (
     <FlatList
