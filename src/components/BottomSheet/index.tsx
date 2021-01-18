@@ -19,6 +19,7 @@ interface RoomProps {
   room_number: number;
   busy: boolean;
   vip: boolean;
+  image: string;
 }
 
 interface BottomSheetProps extends ModalProps {
@@ -69,8 +70,7 @@ const BottomSheet: React.FC<BottomSheetProps> = ({
     <Card onPress={() => handleOnPressCard(item)}>
       <CardImage
         source={{
-          uri:
-            'https://www.diariodaregiao.com.br/_midias/jpg/2019/11/19/sem_titulo-2946461.jpg',
+          uri: `http://localhost:3333/files/${item.image}`,
         }}
       />
       <CardInfo>
