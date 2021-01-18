@@ -5,13 +5,21 @@ import api from '../../services/api';
 
 import Button from '../Button';
 
-import { ModalContainer, Card, CardText, ButtomContainer } from './style';
+import {
+  ModalContainer,
+  Card,
+  CardText,
+  ButtomContainer,
+  CardInfo,
+  CardImage,
+} from './style';
 
 interface RoomProps {
   id: string;
   room_number: number;
   busy: boolean;
   vip: boolean;
+  image: string;
 }
 
 interface BottomSheetProps extends ModalProps {
@@ -56,9 +64,19 @@ const BottomSheet: React.FC<BottomSheetProps> = ({
     setSelectRoom(roomInfo.room_number);
   };
 
+  const parseVipRoomStatus = (status: boolean) => (status ? 'Sim' : 'Não');
+
   const renderItem = ({ item }) => (
     <Card onPress={() => handleOnPressCard(item)}>
-      <CardText>{item.room_number}</CardText>
+      <CardImage
+        source={{
+          uri: `http://localhost:3333/files/${item.image}`,
+        }}
+      />
+      <CardInfo>
+        <CardText>{`Número do quarto: ${item.room_number}`}</CardText>
+        <CardText>{`Quarto VIP: ${parseVipRoomStatus(item.vip)}`}</CardText>
+      </CardInfo>
     </Card>
   );
 

@@ -53,13 +53,13 @@ const Home: React.FC = () => {
     loadFoods();
   }, []);
 
-  const showRoomNumber = () => {};
-
   return (
     <Container>
       <Flex marginBottom={40} alignItems="center" justifyContent="center">
         <HeaderContainer>
-          <ImageContainer source={avatarImg} />
+          <ImageContainer
+            source={{ uri: `http://localhost:3333/files/${user.avatar}` }}
+          />
 
           <HeaderContainerFields>
             <CustomText color="#CCB38D">{`Hospede: ${guest.name}`}</CustomText>
@@ -76,16 +76,8 @@ const Home: React.FC = () => {
           type="breakfast"
           foodsData={foods}
         />
-        <FoodScrollView
-          label="Café da manhã"
-          type="breakfast"
-          foodsData={foods}
-        />
-        <FoodScrollView
-          label="Café da manhã"
-          type="breakfast"
-          foodsData={foods}
-        />
+        <FoodScrollView label="Café da manhã" type="lunch" foodsData={foods} />
+        <FoodScrollView label="Café da manhã" type="dinner" foodsData={foods} />
       </BodyContainer>
 
       <ButtomContainer>
