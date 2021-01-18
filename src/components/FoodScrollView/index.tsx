@@ -1,5 +1,5 @@
 import React from 'react';
-import { FlatList, Text } from 'react-native';
+import { FlatList } from 'react-native';
 
 import { FoodContainer, FoodImage } from './style';
 
@@ -11,16 +11,11 @@ interface Food {
 }
 
 interface FoodScrollViewProps {
-  label: string;
   type: string;
   foodsData: Food[];
 }
 
-const FoodScrollView: React.FC<FoodScrollViewProps> = ({
-  label,
-  type,
-  foodsData,
-}) => {
+const FoodScrollView: React.FC<FoodScrollViewProps> = ({ type, foodsData }) => {
   const renderItem = ({ item }: any) =>
     item.type === type ? (
       <FoodContainer key={item.food_id}>
