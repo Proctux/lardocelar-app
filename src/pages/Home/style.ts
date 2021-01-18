@@ -27,7 +27,10 @@ export const HeaderContainerFields = styled.View`
 export const BodyContainer = styled.View`
   height: 300px;
   justify-content: center;
-  align-items: center;
+`;
+
+export const ItemSeparator = styled.View`
+  border: 1px solid #ccb38d;
 `;
 
 export const ButtomContainer = styled.View`

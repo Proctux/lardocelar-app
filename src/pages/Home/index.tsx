@@ -1,7 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Image } from 'react-native';
+import React, { useState, useEffect, useCallback } from 'react';
 
-import avatarImg from '../../assets/avatarImg.png';
 import CustomText from '../../components/CustomText';
 import FoodScrollView from '../../components/FoodScrollView';
 import Flex from '../../components/Flex';
@@ -14,9 +12,11 @@ import {
   HeaderContainerFields,
   BodyContainer,
   ButtomContainer,
+  ItemSeparator,
 } from './style';
 import Button from '../../components/Button';
 import { useAuth } from '../../hooks/auth';
+import Label from '../../components/Label';
 
 interface Food {
   food_id: number;
@@ -33,25 +33,36 @@ interface User {
   room_id: string;
 }
 
+interface Room {
+  room_number: number;
+  busy: boolean;
+  vip: boolean;
+  id: string;
+}
+
 const Home: React.FC = () => {
   const [foods, setFoods] = useState<Food[]>([]);
   const [guest, setGuest] = useState<User>({} as User);
-  const [roomNumber, setRoomNumber] = useState();
+  const [roomsList, setRoomsList] = useState<Room[]>([]);
 
   const { signOut, user } = useAuth();
 
-  console.log(foods);
-
   useEffect(() => {
-    async function loadFoods(): Promise<void> {
+    async function loadFoodsAndRooms(): Promise<void> {
       const response = await api.get('foods');
+      const responseRooms = await api.get('rooms');
 
       setFoods(response.data);
+      setRoomsList(responseRooms.data);
       setGuest(user);
     }
 
-    loadFoods();
+    loadFoodsAndRooms();
   }, []);
+
+  const filteredRoom = roomsList
+    .filter(room => room.id === user.room_id)
+    .map(item => item.room_number)[0];
 
   return (
     <Container>
@@ -64,21 +75,37 @@ const Home: React.FC = () => {
           <HeaderContainerFields>
             <CustomText color="#CCB38D">{`Hospede: ${guest.name}`}</CustomText>
             <CustomText color="#CCB38D" fontSize={18}>
-              Quarto: 301
+              {`Quarto: ${filteredRoom}`}
             </CustomText>
           </HeaderContainerFields>
         </HeaderContainer>
       </Flex>
 
-      <BodyContainer>
-        <FoodScrollView
-          label="Café da manhã"
-          type="breakfast"
-          foodsData={foods}
-        />
-        <FoodScrollView label="Café da manhã" type="lunch" foodsData={foods} />
-        <FoodScrollView label="Café da manhã" type="dinner" foodsData={foods} />
-      </BodyContainer>
+      <Flex marginBottom={48}>
+        <BodyContainer>
+          <Flex marginBottom={12}>
+            <Label>Café da manhã</Label>
+            <ItemSeparator />
+            <Flex marginTop={12} alignItems="center">
+              <FoodScrollView type="breakfast" foodsData={foods} />
+            </Flex>
+          </Flex>
+
+          <Flex marginBottom={12}>
+            <Label>Almoço</Label>
+            <ItemSeparator />
+            <Flex marginTop={12} alignItems="center">
+              <FoodScrollView type="lunch" foodsData={foods} />
+            </Flex>
+          </Flex>
+
+          <Label>Jantar</Label>
+          <ItemSeparator />
+          <Flex marginTop={12} alignItems="center">
+            <FoodScrollView type="dinner" foodsData={foods} />
+          </Flex>
+        </BodyContainer>
+      </Flex>
 
       <ButtomContainer>
         <Button onPress={() => signOut()}>Sair</Button>
