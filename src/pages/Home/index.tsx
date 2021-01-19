@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import CustomText from '../../components/CustomText';
 import FoodScrollView from '../../components/FoodScrollView';
