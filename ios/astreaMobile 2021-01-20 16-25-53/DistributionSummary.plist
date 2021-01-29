@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>astreaMobile.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>armv7</string>
+				<string>arm64</string>
+			</array>
+			<key>bitcode</key>
+			<true/>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>A5D999BDE34085AAF76DAA45139EC8E43297E07B</string>
+				<key>dateExpires</key>
+				<string>28/12/21</string>
+				<key>type</key>
+				<string>Apple Distribution</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>Q7PJN6XJ4Q.br.net.astrea.app</string>
+				<key>beta-reports-active</key>
+				<true/>
+				<key>com.apple.developer.team-identifier</key>
+				<string>Q7PJN6XJ4Q</string>
+				<key>get-task-allow</key>
+				<false/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>Q7PJN6XJ4Q.br.net.astrea.app</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>astreaMobile.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>9c8e84fb-16b2-4617-be99-32b33f7c3e61</string>
+				<key>name</key>
+				<string>iOS Team Store Provisioning Profile: br.net.astrea.app</string>
+			</dict>
+			<key>symbols</key>
+			<true/>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>Q7PJN6XJ4Q</string>
+				<key>name</key>
+				<string>Aurum Software Ltda</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,5 +1,7 @@
-import React from 'react';
+import { useNavigation } from '@react-navigation/native';
+import React, { useCallback } from 'react';
 import { FlatList } from 'react-native';
+import reactotron from 'reactotron-react-native';
 
 import { FoodContainer, FoodImage } from './style';
 
@@ -16,9 +18,21 @@ interface FoodScrollViewProps {
 }
 
 const FoodScrollView: React.FC<FoodScrollViewProps> = ({ type, foodsData }) => {
+  const navigation = useNavigation();
+
+  const handlePressNavigate = useCallback(
+    item => {
+      navigation.navigate('FoodDetail', { food: item });
+    },
+    [navigation],
+  );
+
   const renderItem = ({ item }: any) =>
     item.type === type ? (
-      <FoodContainer key={item.food_id}>
+      <FoodContainer
+        key={item.food_id}
+        onPress={() => handlePressNavigate(item)}
+      >
         <FoodImage
           source={{ uri: `http://localhost:3333/files/${item.image}` }}
         />

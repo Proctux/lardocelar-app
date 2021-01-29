@@ -7,6 +7,12 @@ import AppProvider from './hooks';
 
 import Routes from './routes';
 
+if (__DEV__) {
+  import('../ReactotronConfig').then(() =>
+    // eslint-disable-next-line prettier/prettier
+    console.log('Reactotron Configured'));
+}
+
 export const App: React.FC = () => (
   <NavigationContainer>
     <StatusBar barStyle="light-content" backgroundColor="#7E2F37" />
