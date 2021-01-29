@@ -8,6 +8,7 @@ interface FlexProps {
   marginTop?: number;
   alignItems?: string;
   justifyContent?: string;
+  flexDirection?: string;
 }
 
 const Flex: React.FC<FlexProps> = ({ children, ...rest }) => (

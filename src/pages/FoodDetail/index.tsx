@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/ban-types */
-import React, { useMemo, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { format, startOfHour, addDays } from 'date-fns';
 import { ScrollView } from 'react-native';
 
@@ -18,6 +18,8 @@ import {
 } from './style';
 import Flex from '../../components/Flex';
 import Input from '../../components/Input';
+import QuantityButtom from '../../components/QuantityButtom';
+import Button from '../../components/Button';
 
 interface Props {
   route: any;
@@ -30,6 +32,26 @@ const FoodDetail: React.FC<Props> = ({ route }) => {
 
   const [selectedHour, setSelectedHour] = useState('');
   const [selectedDate, setSelectedDate] = useState('');
+  const [quantity, setQuantity] = useState(0);
+
+  const handleAddQuantity = useCallback(() => {
+    setQuantity(quantity + 1);
+  }, [quantity]);
+
+  const handleRemoveQuantity = useCallback(() => {
+    if (quantity > 0) {
+      setQuantity(quantity - 1);
+    }
+  }, [quantity]);
+
+  const renderTotalPrice = useCallback(
+    () => `R$${(food.price * quantity).toFixed(2)}`,
+    [food.price, quantity],
+  );
+
+  useEffect(() => {
+    renderTotalPrice();
+  }, [renderTotalPrice]);
 
   const initialHour = useMemo(() => {
     if (food.type === 'breakfast') return 7;
@@ -146,6 +168,15 @@ const FoodDetail: React.FC<Props> = ({ route }) => {
             textAlign="center"
           />
         </InputContainer>
+
+        <Flex marginTop={12} flexDirection="row">
+          <QuantityButtom
+            amount={quantity}
+            addQuantity={handleAddQuantity}
+            removeQuantity={handleRemoveQuantity}
+          />
+          <Button style={{ marginLeft: 120 }}>{renderTotalPrice()}</Button>
+        </Flex>
       </Container>
     </ScrollView>
   );

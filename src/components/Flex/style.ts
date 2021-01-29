@@ -5,6 +5,7 @@ interface ContainerProps {
   marginTop?: number;
   alignItems?: string;
   justifyContent?: string;
+  flexDirection?: string;
 }
 
 export const Container = styled.View<ContainerProps>`
@@ -15,4 +16,6 @@ export const Container = styled.View<ContainerProps>`
   ${({ marginBottom }) =>
     marginBottom ? `margin-bottom: ${marginBottom}px;` : ''}
   ${({ marginTop }) => (marginTop ? `margin-top: ${marginTop}px;` : '')}
+  ${({ flexDirection }) =>
+    flexDirection ? `flex-direction: ${flexDirection}` : ''}
 `;
