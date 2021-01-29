@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/ban-types */
 import React, { useMemo } from 'react';
-import reactotron from 'reactotron-react-native';
-import { format, startOfHour } from 'date-fns';
+import { format, startOfHour, addDays } from 'date-fns';
 import { ScrollView } from 'react-native';
 
 import ItemSeparator from '../../components/ItemSeparator';
@@ -15,8 +14,10 @@ import {
   FoodImage,
   HourContainer,
   HourText,
+  InputContainer,
 } from './style';
 import Flex from '../../components/Flex';
+import Input from '../../components/Input';
 
 interface Props {
   route: any;
@@ -24,7 +25,7 @@ interface Props {
 }
 
 const FoodDetail: React.FC<Props> = ({ route }) => {
-  reactotron.log(route);
+  // reactotron.log(route);
   const { food } = route.params;
 
   const initialHour = useMemo(() => {
@@ -35,7 +36,7 @@ const FoodDetail: React.FC<Props> = ({ route }) => {
 
   const breakFastHourArray = Array.from({ length: 4 }, (_, index) =>
     // eslint-disable-next-line prettier/prettier
-    format(startOfHour(new Date()).setHours(initialHour + index), 'p'));
+    startOfHour(new Date()).setHours(initialHour + index));
 
   const lunchHourArray = Array.from({ length: 4 }, (_, index) =>
     // eslint-disable-next-line prettier/prettier
@@ -51,18 +52,20 @@ const FoodDetail: React.FC<Props> = ({ route }) => {
     return dinnerHourArray;
   }, [breakFastHourArray, lunchHourArray, dinnerHourArray, food]);
 
-  const renderHour = (hour: number) => (
+  const renderHour = (hour: string) => (
     <HourContainer>
       <HourText>{hour}</HourText>
     </HourContainer>
   );
 
-  const renderDate = () => {
-    <HourContainer>{/* <HourText>{date}</HourText> */}</HourContainer>;
-  };
+  const renderDate = (date: string) => (
+    <HourContainer>
+      <HourText>{date}</HourText>
+    </HourContainer>
+  );
 
   return (
-    <>
+    <ScrollView>
       <TopContainer />
       <ImageContainer>
         <FoodImage
@@ -76,34 +79,52 @@ const FoodDetail: React.FC<Props> = ({ route }) => {
           <CustomText>{food.description}</CustomText>
         </Flex>
 
-        <Label style={{ fontSize: 16 }}>Horários</Label>
-        <ItemSeparator />
-        <ScrollView
-          horizontal
-          contentContainerStyle={{
-            height: 50,
-            justifyContent: 'center',
-          }}
-        >
-          {renderHourArray.map((hourItem: any) => renderHour(hourItem))}
-        </ScrollView>
+        <Flex marginTop={24}>
+          <Label style={{ fontSize: 16 }}>Horários</Label>
+          <ItemSeparator />
+          <Flex>
+            <ScrollView
+              horizontal
+              contentContainerStyle={{
+                height: 50,
+                justifyContent: 'center',
+              }}
+            >
+              {renderHourArray.map((hourItem: any) =>
+                renderHour(format(hourItem, 'p')),
+              )}
+            </ScrollView>
+          </Flex>
+        </Flex>
 
-        <Label style={{ fontSize: 16 }}>Data</Label>
-        <ItemSeparator />
-        <ScrollView
-          horizontal
-          contentContainerStyle={{
-            height: 50,
-            justifyContent: 'center',
-          }}
-        >
-          {renderHourArray.map((hourItem: any) => renderItem(hourItem))}
-        </ScrollView>
+        <Flex marginTop={24} marginBottom={24}>
+          <Label style={{ fontSize: 16 }}>Data</Label>
+          <ItemSeparator />
+          <Flex>
+            <ScrollView
+              horizontal
+              contentContainerStyle={{
+                height: 50,
+                justifyContent: 'center',
+              }}
+            >
+              {renderHourArray.map((hourItem: any, index: number) =>
+                renderDate(format(addDays(hourItem, index), 'dd/MM')))}
+            </ScrollView>
+          </Flex>
+        </Flex>
 
         <Label style={{ fontSize: 16 }}>Observações</Label>
         <ItemSeparator />
+        <InputContainer>
+          <Input
+            style={{ height: 148 }}
+            placeholder="Ex: tirar cebola, tomate..."
+            textAlign="center"
+          />
+        </InputContainer>
       </Container>
-    </>
+    </ScrollView>
   );
 };
 

@@ -11,5 +11,5 @@ export const TextInputField = styled.TextInput`
 
   border-radius: 12px;
   background-color: #5e2129;
-  color: #CCB38D;
+  color: #ccb38d;
 `;

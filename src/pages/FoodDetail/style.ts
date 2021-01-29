@@ -41,3 +41,10 @@ export const HourContainer = styled.TouchableOpacity`
 export const HourText = styled.Text`
   color: ${theme.lightColor};
 `;
+
+export const InputContainer = styled.View`
+  border: 1px solid ${theme.lightColor};
+  border-radius: 12px;
+  height: 150px;
+  margin-top: 12px;
+`;
