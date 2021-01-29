@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/ban-types */
-import React, { useMemo } from 'react';
+import React, { useMemo, useState } from 'react';
 import { format, startOfHour, addDays } from 'date-fns';
 import { ScrollView } from 'react-native';
 
@@ -28,6 +28,9 @@ const FoodDetail: React.FC<Props> = ({ route }) => {
   // reactotron.log(route);
   const { food } = route.params;
 
+  const [selectedHour, setSelectedHour] = useState('');
+  const [selectedDate, setSelectedDate] = useState('');
+
   const initialHour = useMemo(() => {
     if (food.type === 'breakfast') return 7;
     if (food.type === 'lunch') return 11;
@@ -38,13 +41,19 @@ const FoodDetail: React.FC<Props> = ({ route }) => {
     // eslint-disable-next-line prettier/prettier
     startOfHour(new Date()).setHours(initialHour + index));
 
-  const lunchHourArray = Array.from({ length: 4 }, (_, index) =>
-    // eslint-disable-next-line prettier/prettier
-    format(startOfHour(new Date()).setHours(initialHour + index), 'p'));
+  const lunchHourArray = Array.from(
+    { length: 4 },
+    (_, index) =>
+      // eslint-disable-next-line prettier/prettier
+      startOfHour(new Date()).setHours(initialHour + index), 'p',
+  );
 
-  const dinnerHourArray = Array.from({ length: 3 }, (_, index) =>
-    // eslint-disable-next-line prettier/prettier
-    format(startOfHour(new Date()).setHours(initialHour + index), 'p'));
+  const dinnerHourArray = Array.from(
+    { length: 3 },
+    (_, index) =>
+      // eslint-disable-next-line prettier/prettier
+      startOfHour(new Date()).setHours(initialHour + index), 'p',
+  );
 
   const renderHourArray = useMemo(() => {
     if (food.type === 'breakfast') return breakFastHourArray;
@@ -52,15 +61,29 @@ const FoodDetail: React.FC<Props> = ({ route }) => {
     return dinnerHourArray;
   }, [breakFastHourArray, lunchHourArray, dinnerHourArray, food]);
 
+  const handleSelectedHour = (value: string) => {
+    setSelectedHour(value);
+  };
+
+  const handleSelectedDate = (value: string) => {
+    setSelectedDate(value);
+  };
+
   const renderHour = (hour: string) => (
-    <HourContainer>
-      <HourText>{hour}</HourText>
+    <HourContainer
+      onPress={() => handleSelectedHour(hour)}
+      isSelected={hour === selectedHour}
+    >
+      <HourText isSelected={hour === selectedHour}>{hour}</HourText>
     </HourContainer>
   );
 
   const renderDate = (date: string) => (
-    <HourContainer>
-      <HourText>{date}</HourText>
+    <HourContainer
+      onPress={() => handleSelectedDate(date)}
+      isSelected={date === selectedDate}
+    >
+      <HourText isSelected={date === selectedDate}>{date}</HourText>
     </HourContainer>
   );
 
@@ -91,8 +114,7 @@ const FoodDetail: React.FC<Props> = ({ route }) => {
               }}
             >
               {renderHourArray.map((hourItem: any) =>
-                renderHour(format(hourItem, 'p')),
-              )}
+                renderHour(format(hourItem, 'p')),)}
             </ScrollView>
           </Flex>
         </Flex>
@@ -108,8 +130,9 @@ const FoodDetail: React.FC<Props> = ({ route }) => {
                 justifyContent: 'center',
               }}
             >
-              {renderHourArray.map((hourItem: any, index: number) =>
-                renderDate(format(addDays(hourItem, index), 'dd/MM')))}
+              {renderHourArray.map((dateItem: any, index: number) =>
+                renderDate(format(addDays(dateItem, index), 'dd/MM')),
+              )}
             </ScrollView>
           </Flex>
         </Flex>

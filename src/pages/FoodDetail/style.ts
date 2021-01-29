@@ -1,6 +1,14 @@
 import styled from 'styled-components/native';
 import { theme } from '../../utils/constants/themeConstants';
 
+interface HourContainerProps {
+  isSelected: boolean;
+}
+
+interface HourTextProps {
+  isSelected: boolean;
+}
+
 export const TopContainer = styled.View`
   height: 180px;
   align-items: center;
@@ -27,7 +35,7 @@ export const Container = styled.View`
   margin-top: 120px;
 `;
 
-export const HourContainer = styled.TouchableOpacity`
+export const HourContainer = styled.TouchableOpacity<HourContainerProps>`
   width: 80px;
   height: 40px;
   margin: 8px;
@@ -36,10 +44,13 @@ export const HourContainer = styled.TouchableOpacity`
 
   align-items: center;
   justify-content: center;
+
+  background-color: ${props =>
+    props.isSelected ? theme.lightColor : 'transparent'};
 `;
 
-export const HourText = styled.Text`
-  color: ${theme.lightColor};
+export const HourText = styled.Text<HourTextProps>`
+  color: ${props => (props.isSelected ? theme.darkRedColor : theme.lightColor)};
 `;
 
 export const InputContainer = styled.View`
