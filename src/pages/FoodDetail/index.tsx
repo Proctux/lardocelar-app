@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/ban-types */
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
-import { format, startOfHour, addDays } from 'date-fns';
+import { format, startOfHour, addDays, parseISO } from 'date-fns';
 import { ScrollView } from 'react-native';
 
 import ItemSeparator from '../../components/ItemSeparator';
@@ -20,19 +20,50 @@ import Flex from '../../components/Flex';
 import Input from '../../components/Input';
 import QuantityButtom from '../../components/QuantityButtom';
 import Button from '../../components/Button';
+import api from '../../services/api';
 
 interface Props {
   route: any;
   navigation: any;
 }
 
+interface Availability {
+  hour: number;
+  available: boolean;
+  hourFormatted?: number;
+}
+
 const FoodDetail: React.FC<Props> = ({ route }) => {
   // reactotron.log(route);
   const { food } = route.params;
 
-  const [selectedHour, setSelectedHour] = useState('');
-  const [selectedDate, setSelectedDate] = useState('');
+  const [selectedHour, setSelectedHour] = useState(0);
+  const [selectedDate, setSelectedDate] = useState(new Date());
   const [quantity, setQuantity] = useState(0);
+
+  const [availability, setAvailability] = useState<Availability[]>([]);
+
+  useEffect(() => {
+    async function loadAvailability() {
+      const response = await api.get(`orders/${food.type}-availability`, {
+        params: {
+          day: String(selectedDate.getDate()),
+          month: String(selectedDate.getMonth() + 1),
+          year: String(selectedDate.getFullYear()),
+        },
+      });
+
+      setAvailability(response.data);
+    }
+
+    loadAvailability();
+  }, [selectedDate]);
+
+  const availabilityDateHour = availability.map(({ hour, available }) => ({
+    hour,
+    available,
+    hourFormatted: format(new Date().setHours(hour), 'HH:00'),
+  }));
 
   const handleAddQuantity = useCallback(() => {
     setQuantity(quantity + 1);
@@ -83,29 +114,23 @@ const FoodDetail: React.FC<Props> = ({ route }) => {
     return dinnerHourArray;
   }, [breakFastHourArray, lunchHourArray, dinnerHourArray, food]);
 
-  const handleSelectedHour = (value: string) => {
+  const handleSelectedHour = (value: number) => {
     setSelectedHour(value);
   };
 
   const handleSelectedDate = (value: string) => {
-    setSelectedDate(value);
+    const [day, month] = value.split('/');
+    setSelectedDate(parseISO(`${new Date().getFullYear()}-${month}-${day}`));
   };
-
-  const renderHour = (hour: string) => (
-    <HourContainer
-      onPress={() => handleSelectedHour(hour)}
-      isSelected={hour === selectedHour}
-    >
-      <HourText isSelected={hour === selectedHour}>{hour}</HourText>
-    </HourContainer>
-  );
 
   const renderDate = (date: string) => (
     <HourContainer
       onPress={() => handleSelectedDate(date)}
-      isSelected={date === selectedDate}
+      isSelected={date === format(selectedDate, 'dd/MM')}
     >
-      <HourText isSelected={date === selectedDate}>{date}</HourText>
+      <HourText isSelected={date === format(selectedDate, 'dd/MM')}>
+        {date}
+      </HourText>
     </HourContainer>
   );
 
@@ -135,8 +160,19 @@ const FoodDetail: React.FC<Props> = ({ route }) => {
                 justifyContent: 'center',
               }}
             >
-              {renderHourArray.map((hourItem: any) =>
-                renderHour(format(hourItem, 'p')),)}
+              {availabilityDateHour.map(
+                ({ hour, available, hourFormatted }) => (
+                  <HourContainer
+                    onPress={() => handleSelectedHour(hour)}
+                    isSelected={hour === selectedHour}
+                    disabled={!available}
+                  >
+                    <HourText isSelected={hour === selectedHour}>
+                      {hourFormatted}
+                    </HourText>
+                  </HourContainer>
+                ),
+              )}
             </ScrollView>
           </Flex>
         </Flex>
@@ -153,8 +189,7 @@ const FoodDetail: React.FC<Props> = ({ route }) => {
               }}
             >
               {renderHourArray.map((dateItem: any, index: number) =>
-                renderDate(format(addDays(dateItem, index), 'dd/MM')),
-              )}
+                renderDate(format(addDays(dateItem, index), 'dd/MM')))}
             </ScrollView>
           </Flex>
         </Flex>
