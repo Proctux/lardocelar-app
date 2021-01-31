@@ -43,6 +43,7 @@
         "object-curly-newline": "off",
         "prettier/prettier": "error",
         "react-hooks/exhaustive-deps": "warn",
+        "import/no-extraneous-dependencies": "off",
         "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
         "import/prefer-default-export": "off",
         "import/extensions": [

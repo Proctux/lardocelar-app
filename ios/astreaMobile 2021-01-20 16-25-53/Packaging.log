@@ -1,0 +1,891 @@
+2021-01-20 19:25:23 +0000  Initial pipeline context: <IDEDistributionProcessingPipelineContext: 0x7fc6de867750; archive(resolved)='<IDEArchive: 0x7fc70b61d860>', distributionTask(resolved)='2', distributionDestination(resolved)='1', distributionMethod(resolved)='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fc6dd4e7610>', team(resolved)='<IDEProvisioningDisambiguatableBasicTeam: 0x7fc71382b080; teamID='Q7PJN6XJ4Q', teamName='Aurum Software Ltda', teamType='Company', username='luiz.morais@aurum.com.br', isFreeProvisioningTeam='0'>'>
+	Chain (12, self inclusive):
+	<IDEDistributionProcessingPipelineContext: 0x7fc6de867750; archive = '<IDEArchive: 0x7fc70b61d860>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fc6dd4e7610>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fc71382b080; teamID='Q7PJN6XJ4Q', teamName='Aurum Software Ltda', teamType='Company', username='luiz.morais@aurum.com.br', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionProcessingPipelineContext: 0x7fc6de854d60; archive = '<IDEArchive: 0x7fc70b61d860>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fc6dd4e7610>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fc71382b080; teamID='Q7PJN6XJ4Q', teamName='Aurum Software Ltda', teamType='Company', username='luiz.morais@aurum.com.br', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fc6de3c1e60; archive = '<IDEArchive: 0x7fc70b61d860>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fc6dd4e7610>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fc71382b080; teamID='Q7PJN6XJ4Q', teamName='Aurum Software Ltda', teamType='Company', username='luiz.morais@aurum.com.br', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fc6de853a80; archive = '<IDEArchive: 0x7fc70b61d860>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fc6dd4e7610>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fc71382b080; teamID='Q7PJN6XJ4Q', teamName='Aurum Software Ltda', teamType='Company', username='luiz.morais@aurum.com.br', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fc6de394720; archive = '<IDEArchive: 0x7fc70b61d860>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fc6dd4e7610>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fc71382b080; teamID='Q7PJN6XJ4Q', teamName='Aurum Software Ltda', teamType='Company', username='luiz.morais@aurum.com.br', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fc6de824250; archive = '<IDEArchive: 0x7fc70b61d860>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fc6dd4e7610>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fc71382b080; teamID='Q7PJN6XJ4Q', teamName='Aurum Software Ltda', teamType='Company', username='luiz.morais@aurum.com.br', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fc6de96ab80; archive = '<IDEArchive: 0x7fc70b61d860>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fc6dd4e7610>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fc71382b080; teamID='Q7PJN6XJ4Q', teamName='Aurum Software Ltda', teamType='Company', username='luiz.morais@aurum.com.br', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fc6de905f50; archive = '<IDEArchive: 0x7fc70b61d860>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fc6dd4e7610>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fc71382b080; teamID='Q7PJN6XJ4Q', teamName='Aurum Software Ltda', teamType='Company', username='luiz.morais@aurum.com.br', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fc6dea730e0; archive = '<IDEArchive: 0x7fc70b61d860>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fc6dd4e7610>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fc71382b080; teamID='Q7PJN6XJ4Q', teamName='Aurum Software Ltda', teamType='Company', username='luiz.morais@aurum.com.br', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fc6d909e8d0; archive = '<IDEArchive: 0x7fc70b61d860>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fc6dd4e7610>', team='(null)'>
+	<IDEDistributionContext: 0x7fc6de7c2ed0; archive = '<IDEArchive: 0x7fc70b61d860>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fc6dd4e7610>', team='(null)'>
+	<IDEDistributionContext: 0x7fc6d9099300; archive = '<IDEArchive: 0x7fc70b61d860>', distributionMethod='(null)', team='(null)'>
+</IDEDistributionProcessingPipelineContext: 0x7fc6de867750>
+2021-01-20 19:25:23 +0000  Processing step: IDEDistributionCreateDestRootStep
+2021-01-20 19:25:23 +0000  Processing step: IDEDistributionCopyItemStep
+2021-01-20 19:25:23 +0000  Running /usr/bin/ditto '-V' '/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app'
+2021-01-20 19:25:23 +0000  >>> Copying /Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app 
+2021-01-20 19:25:23 +0000  copying file ./_CodeSignature/CodeResources ... 
+2021-01-20 19:25:23 +0000  23933 bytes for ./_CodeSignature/CodeResources
+2021-01-20 19:25:23 +0000  copying file ./Fontisto.ttf ... 
+2021-01-20 19:25:23 +0000  313528 bytes for ./Fontisto.ttf
+2021-01-20 19:25:23 +0000  copying file ./Octicons.ttf ... 
+2021-01-20 19:25:23 +0000  28364 bytes for ./Octicons.ttf
+2021-01-20 19:25:23 +0000  copying file ./Feather.ttf ... 
+2021-01-20 19:25:23 +0000  58272 bytes for ./Feather.ttf
+2021-01-20 19:25:23 +0000  copying file ./AppIcon20x20@2x.png ... 
+2021-01-20 19:25:23 +0000  505 bytes for ./AppIcon20x20@2x.png
+2021-01-20 19:25:23 +0000  copying file ./Entypo.ttf ... 
+2021-01-20 19:25:23 +0000  65584 bytes for ./Entypo.ttf
+2021-01-20 19:25:23 +0000  copying file ./AppIcon20x20@3x.png ... 
+2021-01-20 19:25:23 +0000  580 bytes for ./AppIcon20x20@3x.png
+copying file ./FontAwesome5_Brands.ttf ... 
+2021-01-20 19:25:23 +0000  125016 bytes for ./FontAwesome5_Brands.ttf
+2021-01-20 19:25:23 +0000  copying file ./MaterialCommunityIcons.ttf ... 
+2021-01-20 19:25:23 +0000  546548 bytes for ./MaterialCommunityIcons.ttf
+2021-01-20 19:25:23 +0000  copying file ./AppIcon60x60@2x.png ... 
+1062 bytes for ./AppIcon60x60@2x.png
+copying file ./AppIcon29x29@2x.png ... 
+2021-01-20 19:25:23 +0000  575 bytes for ./AppIcon29x29@2x.png
+copying file ./AntDesign.ttf ... 
+2021-01-20 19:25:23 +0000  70344 bytes for ./AntDesign.ttf
+2021-01-20 19:25:23 +0000  copying file ./AppIcon40x40@3x.png ... 
+2021-01-20 19:25:23 +0000  1062 bytes for ./AppIcon40x40@3x.png
+2021-01-20 19:25:23 +0000  copying file ./Foundation.ttf ... 
+2021-01-20 19:25:23 +0000  56976 bytes for ./Foundation.ttf
+copying file ./Ionicons.ttf ... 
+2021-01-20 19:25:23 +0000  112472 bytes for ./Ionicons.ttf
+2021-01-20 19:25:23 +0000  copying file ./FontAwesome5_Solid.ttf ... 
+2021-01-20 19:25:23 +0000  186228 bytes for ./FontAwesome5_Solid.ttf
+2021-01-20 19:25:23 +0000  copying file ./AppIcon40x40@2x.png ... 
+2021-01-20 19:25:23 +0000  887 bytes for ./AppIcon40x40@2x.png
+copying file ./FontAwesome5_Regular.ttf ... 
+2021-01-20 19:25:23 +0000  34092 bytes for ./FontAwesome5_Regular.ttf
+2021-01-20 19:25:23 +0000  copying file ./AppIcon29x29@3x.png ... 
+2021-01-20 19:25:23 +0000  910 bytes for ./AppIcon29x29@3x.png
+2021-01-20 19:25:23 +0000  copying file ./AppIcon60x60@3x.png ... 
+2021-01-20 19:25:23 +0000  1343 bytes for ./AppIcon60x60@3x.png
+2021-01-20 19:25:23 +0000  copying file ./Base.lproj/LaunchScreen.nib ... 
+2021-01-20 19:25:23 +0000  1506 bytes for ./Base.lproj/LaunchScreen.nib
+2021-01-20 19:25:23 +0000  copying file ./FontAwesome.ttf ... 
+2021-01-20 19:25:23 +0000  165548 bytes for ./FontAwesome.ttf
+copying file ./Zocial.ttf ... 
+2021-01-20 19:25:23 +0000  25552 bytes for ./Zocial.ttf
+2021-01-20 19:25:23 +0000  copying file ./Assets.car ... 
+2021-01-20 19:25:23 +0000  51023 bytes for ./Assets.car
+2021-01-20 19:25:23 +0000  copying file ./EvilIcons.ttf ... 
+2021-01-20 19:25:23 +0000  13456 bytes for ./EvilIcons.ttf
+2021-01-20 19:25:23 +0000  copying file ./MuseoSans-500.otf ... 
+2021-01-20 19:25:23 +0000  62504 bytes for ./MuseoSans-500.otf
+2021-01-20 19:25:23 +0000  copying file ./astreaMobile ... 
+2021-01-20 19:25:23 +0000  75685376 bytes for ./astreaMobile
+copying file ./main.jsbundle ... 
+2021-01-20 19:25:23 +0000  2812819 bytes for ./main.jsbundle
+2021-01-20 19:25:23 +0000  copying file ./MuseoSans-700.otf ... 
+2021-01-20 19:25:23 +0000  63568 bytes for ./MuseoSans-700.otf
+2021-01-20 19:25:23 +0000  copying file ./Frameworks/libswiftCoreImage.dylib ... 
+2021-01-20 19:25:23 +0000  466576 bytes for ./Frameworks/libswiftCoreImage.dylib
+2021-01-20 19:25:23 +0000  copying file ./Frameworks/libswiftObjectiveC.dylib ... 
+2021-01-20 19:25:23 +0000  679696 bytes for ./Frameworks/libswiftObjectiveC.dylib
+copying file ./Frameworks/libswiftCore.dylib ... 
+2021-01-20 19:25:23 +0000  95497600 bytes for ./Frameworks/libswiftCore.dylib
+copying file ./Frameworks/libswiftCoreGraphics.dylib ... 
+2021-01-20 19:25:23 +0000  2041040 bytes for ./Frameworks/libswiftCoreGraphics.dylib
+copying file ./Frameworks/libswiftUIKit.dylib ... 
+2021-01-20 19:25:23 +0000  1608816 bytes for ./Frameworks/libswiftUIKit.dylib
+copying file ./Frameworks/libswiftMetal.dylib ... 
+724432 bytes for ./Frameworks/libswiftMetal.dylib
+copying file ./Frameworks/libswiftDispatch.dylib ... 
+2021-01-20 19:25:23 +0000  4056912 bytes for ./Frameworks/libswiftDispatch.dylib
+2021-01-20 19:25:23 +0000  copying file ./Frameworks/libswiftos.dylib ... 
+857184 bytes for ./Frameworks/libswiftos.dylib
+copying file ./Frameworks/libswiftCoreFoundation.dylib ... 
+450400 bytes for ./Frameworks/libswiftCoreFoundation.dylib
+copying file ./Frameworks/libswiftDarwin.dylib ... 
+2021-01-20 19:25:23 +0000  1091440 bytes for ./Frameworks/libswiftDarwin.dylib
+copying file ./Frameworks/libswiftQuartzCore.dylib ... 
+486352 bytes for ./Frameworks/libswiftQuartzCore.dylib
+copying file ./Frameworks/libswiftFoundation.dylib ... 
+2021-01-20 19:25:23 +0000  43094320 bytes for ./Frameworks/libswiftFoundation.dylib
+2021-01-20 19:25:23 +0000  copying file ./SimpleLineIcons.ttf ... 
+2021-01-20 19:25:23 +0000  54056 bytes for ./SimpleLineIcons.ttf
+2021-01-20 19:25:23 +0000  copying file ./embedded.mobileprovision ... 
+2021-01-20 19:25:23 +0000  7704 bytes for ./embedded.mobileprovision
+2021-01-20 19:25:23 +0000  copying file ./assets/node_modules/css-color-keywords/colors.json ... 
+2021-01-20 19:25:23 +0000  3796 bytes for ./assets/node_modules/css-color-keywords/colors.json
+2021-01-20 19:25:23 +0000  copying file ./assets/node_modules/dom-serializer/foreignNames.json ... 
+2021-01-20 19:25:23 +0000  3149 bytes for ./assets/node_modules/dom-serializer/foreignNames.json
+2021-01-20 19:25:23 +0000  copying file ./assets/node_modules/react-native-calendar-strip/src/img/left-arrow-black.png ... 
+2021-01-20 19:25:23 +0000  311 bytes for ./assets/node_modules/react-native-calendar-strip/src/img/left-arrow-black.png
+2021-01-20 19:25:23 +0000  copying file ./assets/node_modules/react-native-calendar-strip/src/img/right-arrow-black.png ... 
+2021-01-20 19:25:23 +0000  304 bytes for ./assets/node_modules/react-native-calendar-strip/src/img/right-arrow-black.png
+2021-01-20 19:25:23 +0000  copying file ./assets/node_modules/react-native-vector-icons/glyphmaps/Ionicons.json ... 
+2021-01-20 19:25:23 +0000  17166 bytes for ./assets/node_modules/react-native-vector-icons/glyphmaps/Ionicons.json
+2021-01-20 19:25:23 +0000  copying file ./assets/node_modules/react-native-vector-icons/glyphmaps/FontAwesome5Free_meta.json ... 
+2021-01-20 19:25:23 +0000  26240 bytes for ./assets/node_modules/react-native-vector-icons/glyphmaps/FontAwesome5Free_meta.json
+2021-01-20 19:25:23 +0000  copying file ./assets/node_modules/react-native-vector-icons/glyphmaps/MaterialIcons.json ... 
+2021-01-20 19:25:23 +0000  22815 bytes for ./assets/node_modules/react-native-vector-icons/glyphmaps/MaterialIcons.json
+2021-01-20 19:25:23 +0000  copying file ./assets/node_modules/react-native-vector-icons/glyphmaps/FontAwesome5Free.json ... 
+2021-01-20 19:25:23 +0000  30175 bytes for ./assets/node_modules/react-native-vector-icons/glyphmaps/FontAwesome5Free.json
+2021-01-20 19:25:23 +0000  copying file ./assets/node_modules/react-native-vector-icons/glyphmaps/MaterialCommunityIcons.json ... 
+2021-01-20 19:25:23 +0000  97065 bytes for ./assets/node_modules/react-native-vector-icons/glyphmaps/MaterialCommunityIcons.json
+2021-01-20 19:25:24 +0000  copying file ./assets/node_modules/react-native-calendars/src/calendar/img/previous@2x.png ... 
+2021-01-20 19:25:24 +0000  458 bytes for ./assets/node_modules/react-native-calendars/src/calendar/img/previous@2x.png
+2021-01-20 19:25:24 +0000  copying file ./assets/node_modules/react-native-calendars/src/calendar/img/next@2x.png ... 
+2021-01-20 19:25:24 +0000  462 bytes for ./assets/node_modules/react-native-calendars/src/calendar/img/next@2x.png
+2021-01-20 19:25:24 +0000  copying file ./assets/node_modules/react-native-calendars/src/img/down@3x.png ... 
+2021-01-20 19:25:24 +0000  508 bytes for ./assets/node_modules/react-native-calendars/src/img/down@3x.png
+2021-01-20 19:25:24 +0000  copying file ./assets/node_modules/react-native-calendars/src/img/down@2x.png ... 
+2021-01-20 19:25:24 +0000  354 bytes for ./assets/node_modules/react-native-calendars/src/img/down@2x.png
+2021-01-20 19:25:24 +0000  copying file ./assets/node_modules/react-native-calendars/src/img/up.png ... 
+2021-01-20 19:25:24 +0000  215 bytes for ./assets/node_modules/react-native-calendars/src/img/up.png
+2021-01-20 19:25:24 +0000  copying file ./assets/node_modules/react-native-calendars/src/img/down.png ... 
+2021-01-20 19:25:24 +0000  208 bytes for ./assets/node_modules/react-native-calendars/src/img/down.png
+2021-01-20 19:25:24 +0000  copying file ./assets/node_modules/react-native-calendars/src/img/up@2x.png ... 
+2021-01-20 19:25:24 +0000  347 bytes for ./assets/node_modules/react-native-calendars/src/img/up@2x.png
+copying file ./assets/node_modules/react-native-calendars/src/img/up@3x.png ... 
+2021-01-20 19:25:24 +0000  504 bytes for ./assets/node_modules/react-native-calendars/src/img/up@3x.png
+2021-01-20 19:25:24 +0000  copying file ./assets/node_modules/entities/lib/maps/xml.json ... 
+2021-01-20 19:25:24 +0000  64 bytes for ./assets/node_modules/entities/lib/maps/xml.json
+2021-01-20 19:25:24 +0000  copying file ./assets/node_modules/entities/lib/maps/decode.json ... 
+2021-01-20 19:25:24 +0000  356 bytes for ./assets/node_modules/entities/lib/maps/decode.json
+2021-01-20 19:25:24 +0000  copying file ./assets/node_modules/entities/lib/maps/entities.json ... 
+2021-01-20 19:25:24 +0000  44868 bytes for ./assets/node_modules/entities/lib/maps/entities.json
+2021-01-20 19:25:24 +0000  copying file ./assets/node_modules/entities/lib/maps/legacy.json ... 
+2021-01-20 19:25:24 +0000  1961 bytes for ./assets/node_modules/entities/lib/maps/legacy.json
+2021-01-20 19:25:24 +0000  copying file ./assets/node_modules/react-native-code-push/package.json ... 
+2021-01-20 19:25:24 +0000  2772 bytes for ./assets/node_modules/react-native-code-push/package.json
+2021-01-20 19:25:24 +0000  copying file ./assets/i18n/es_AR.json ... 
+2021-01-20 19:25:24 +0000  803 bytes for ./assets/i18n/es_AR.json
+2021-01-20 19:25:24 +0000  copying file ./assets/i18n/pt_BR.json ... 
+2021-01-20 19:25:24 +0000  16464 bytes for ./assets/i18n/pt_BR.json
+2021-01-20 19:25:24 +0000  copying file ./assets/assets/animations/loading.json ... 
+2021-01-20 19:25:24 +0000  7316 bytes for ./assets/assets/animations/loading.json
+2021-01-20 19:25:24 +0000  copying file ./Info.plist ... 
+2021-01-20 19:25:24 +0000  1865 bytes for ./Info.plist
+2021-01-20 19:25:24 +0000  copying file ./PkgInfo ... 
+2021-01-20 19:25:24 +0000  8 bytes for ./PkgInfo
+2021-01-20 19:25:24 +0000  copying file ./MaterialIcons.ttf ... 
+2021-01-20 19:25:24 +0000  128180 bytes for ./MaterialIcons.ttf
+2021-01-20 19:25:24 +0000  /usr/bin/ditto exited with 0
+2021-01-20 19:25:24 +0000  Processing step: IDEDistributionEmbedProfileStep
+2021-01-20 19:25:24 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fc6d96fb640; bundleID='com.apple.dt.runtime.swiftCore', path='<DVTFilePath:0x7fc6de9172a0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftCore.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc70b699ab0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6dd6e24e0; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc70214ebe0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftCore', executablePath='<DVTFilePath:0x7fc6de9172a0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftCore.dylib'>', hardenedRuntime='0'>'>
+2021-01-20 19:25:24 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fc6de970640; bundleID='com.apple.dt.runtime.swiftCoreFoundation', path='<DVTFilePath:0x7fc7136bdbd0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftCoreFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6de604af0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6dd6e24e0; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc702157280>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftCoreFoundation', executablePath='<DVTFilePath:0x7fc7136bdbd0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftCoreFoundation.dylib'>', hardenedRuntime='0'>'>
+2021-01-20 19:25:24 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fc6de83b100; bundleID='com.apple.dt.runtime.swiftCoreGraphics', path='<DVTFilePath:0x7fc6dd964cf0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftCoreGraphics.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6de9a9b50; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6dd6e24e0; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc7021de5f0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftCoreGraphics', executablePath='<DVTFilePath:0x7fc6dd964cf0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftCoreGraphics.dylib'>', hardenedRuntime='0'>'>
+2021-01-20 19:25:24 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fc6dd352ec0; bundleID='com.apple.dt.runtime.swiftCoreImage', path='<DVTFilePath:0x7fc6de8049a0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftCoreImage.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6dd31c800; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6dd6e24e0; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc70219cb40>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftCoreImage', executablePath='<DVTFilePath:0x7fc6de8049a0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftCoreImage.dylib'>', hardenedRuntime='0'>'>
+2021-01-20 19:25:24 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fc6dbd373d0; bundleID='com.apple.dt.runtime.swiftDarwin', path='<DVTFilePath:0x7fc6de3b9410:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftDarwin.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6dd6f1670; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6dd6e24e0; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc702126dc0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftDarwin', executablePath='<DVTFilePath:0x7fc6de3b9410:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftDarwin.dylib'>', hardenedRuntime='0'>'>
+2021-01-20 19:25:24 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fc6dea5f0f0; bundleID='com.apple.dt.runtime.swiftDispatch', path='<DVTFilePath:0x7fc70f94a210:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftDispatch.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6de97c160; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6dd6e24e0; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc702190930>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftDispatch', executablePath='<DVTFilePath:0x7fc70f94a210:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftDispatch.dylib'>', hardenedRuntime='0'>'>
+2021-01-20 19:25:24 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fc6de3bc950; bundleID='com.apple.dt.runtime.swiftFoundation', path='<DVTFilePath:0x7fc6de348df0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6dea5f570; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6dd6e24e0; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc7021811c0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftFoundation', executablePath='<DVTFilePath:0x7fc6de348df0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftFoundation.dylib'>', hardenedRuntime='0'>'>
+2021-01-20 19:25:24 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fc6de8402d0; bundleID='com.apple.dt.runtime.swiftMetal', path='<DVTFilePath:0x7fc70c9b7740:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftMetal.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc70fed52b0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc70734ebe0; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc6f6836c80>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftMetal', executablePath='<DVTFilePath:0x7fc70c9b7740:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftMetal.dylib'>', hardenedRuntime='0'>'>
+2021-01-20 19:25:24 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fc6dea299d0; bundleID='com.apple.dt.runtime.swiftObjectiveC', path='<DVTFilePath:0x7fc6de8182d0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftObjectiveC.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6de330f60; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6dd6e24e0; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc702192310>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftObjectiveC', executablePath='<DVTFilePath:0x7fc6de8182d0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftObjectiveC.dylib'>', hardenedRuntime='0'>'>
+2021-01-20 19:25:24 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fc6de317310; bundleID='com.apple.dt.runtime.swiftQuartzCore', path='<DVTFilePath:0x7fc6de3b9de0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftQuartzCore.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc70b83fc70; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc70734ebe0; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc6f70850e0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftQuartzCore', executablePath='<DVTFilePath:0x7fc6de3b9de0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftQuartzCore.dylib'>', hardenedRuntime='0'>'>
+2021-01-20 19:25:24 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fc6dde497a0; bundleID='com.apple.dt.runtime.swiftUIKit', path='<DVTFilePath:0x7fc6de819d40:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftUIKit.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6de9a9190; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc70734ebe0; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc70376ced0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftUIKit', executablePath='<DVTFilePath:0x7fc6de819d40:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftUIKit.dylib'>', hardenedRuntime='0'>'>
+2021-01-20 19:25:24 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fc6de8477e0; bundleID='com.apple.dt.runtime.swiftos', path='<DVTFilePath:0x7fc6de818ba0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftos.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6de3bd060; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc70734ebe0; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc70d19cb30>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftos', executablePath='<DVTFilePath:0x7fc6de818ba0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftos.dylib'>', hardenedRuntime='0'>'>
+2021-01-20 19:25:24 +0000  Processing step: IDEDistributionInfoPlistStep
+2021-01-20 19:25:24 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-01-20 19:25:24 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-01-20 19:25:24 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-01-20 19:25:24 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-01-20 19:25:24 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-01-20 19:25:24 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-01-20 19:25:24 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-01-20 19:25:24 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-01-20 19:25:24 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-01-20 19:25:24 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-01-20 19:25:24 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-01-20 19:25:24 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-01-20 19:25:24 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-01-20 19:25:24 +0000  Processing step: IDEDistributionItemRemovalStep
+2021-01-20 19:25:24 +0000  Processing step: IDEDistributionAppThinningPlistStep
+2021-01-20 19:25:24 +0000  Skipping step: IDEDistributionAppThinningPlistStep because it said so
+2021-01-20 19:25:24 +0000  Processing step: IDEDistributionCompileBitcodeStep
+2021-01-20 19:25:24 +0000  Skipping step: IDEDistributionCompileBitcodeStep because it said so
+2021-01-20 19:25:24 +0000  Processing step: IDEDistributionCodeSlimmingStep
+2021-01-20 19:25:24 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/astreaMobile' '-l' '-o' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/astreaMobile'
+2021-01-20 19:25:24 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip exited with 0
+2021-01-20 19:25:24 +0000  Processing step: IDEDistributionCopyBCSymbolMapsStep
+2021-01-20 19:25:24 +0000  Running /usr/bin/ditto '-V' '/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/BCSymbolMaps/717314CE-EB60-33DA-AD4E-3CBD28D2DE53.bcsymbolmap' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/BCSymbolMaps/717314CE-EB60-33DA-AD4E-3CBD28D2DE53.bcsymbolmap'
+2021-01-20 19:25:24 +0000  >>> Copying /Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/BCSymbolMaps/717314CE-EB60-33DA-AD4E-3CBD28D2DE53.bcsymbolmap 
+2021-01-20 19:25:24 +0000  copying file ./717314CE-EB60-33DA-AD4E-3CBD28D2DE53.bcsymbolmap ... 
+2021-01-20 19:25:24 +0000  2885912 bytes for ./717314CE-EB60-33DA-AD4E-3CBD28D2DE53.bcsymbolmap
+2021-01-20 19:25:24 +0000  /usr/bin/ditto exited with 0
+2021-01-20 19:25:24 +0000  Running /usr/bin/ditto '-V' '/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/BCSymbolMaps/FEE7C4F8-B706-34F6-962C-768F0A8AB2EF.bcsymbolmap' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/BCSymbolMaps/FEE7C4F8-B706-34F6-962C-768F0A8AB2EF.bcsymbolmap'
+2021-01-20 19:25:24 +0000  >>> Copying /Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/BCSymbolMaps/FEE7C4F8-B706-34F6-962C-768F0A8AB2EF.bcsymbolmap 
+2021-01-20 19:25:24 +0000  copying file ./FEE7C4F8-B706-34F6-962C-768F0A8AB2EF.bcsymbolmap ... 
+2021-01-20 19:25:24 +0000  2916604 bytes for ./FEE7C4F8-B706-34F6-962C-768F0A8AB2EF.bcsymbolmap
+2021-01-20 19:25:24 +0000  /usr/bin/ditto exited with 0
+2021-01-20 19:25:24 +0000  Processing step: IDEDistributionSymbolsStep
+2021-01-20 19:25:25 +0000  Excluding symbols for libswiftCore.dylib
+2021-01-20 19:25:25 +0000  Excluding symbols for libswiftCoreFoundation.dylib
+2021-01-20 19:25:25 +0000  Excluding symbols for libswiftCoreGraphics.dylib
+2021-01-20 19:25:25 +0000  Excluding symbols for libswiftCoreImage.dylib
+2021-01-20 19:25:25 +0000  Excluding symbols for libswiftDarwin.dylib
+2021-01-20 19:25:25 +0000  Excluding symbols for libswiftDispatch.dylib
+2021-01-20 19:25:25 +0000  Excluding symbols for libswiftFoundation.dylib
+2021-01-20 19:25:25 +0000  Excluding symbols for libswiftMetal.dylib
+2021-01-20 19:25:25 +0000  Excluding symbols for libswiftObjectiveC.dylib
+2021-01-20 19:25:25 +0000  Excluding symbols for libswiftQuartzCore.dylib
+2021-01-20 19:25:25 +0000  Excluding symbols for libswiftUIKit.dylib
+2021-01-20 19:25:25 +0000  Excluding symbols for libswiftos.dylib
+2021-01-20 19:25:25 +0000  Excluding symbols for astreaMobile.app
+2021-01-20 19:25:25 +0000  Processing step: IDEDistributionCopyAppleProvidedContentStep
+2021-01-20 19:25:25 +0000  Running /usr/bin/ditto '-V' '/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/SwiftSupport' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/SwiftSupport'
+2021-01-20 19:25:25 +0000  >>> Copying /Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/SwiftSupport 
+2021-01-20 19:25:25 +0000  copying file ./iphoneos/libswiftCoreImage.dylib ... 
+2021-01-20 19:25:25 +0000  533860 bytes for ./iphoneos/libswiftCoreImage.dylib
+2021-01-20 19:25:25 +0000  copying file ./iphoneos/libswiftObjectiveC.dylib ... 
+2021-01-20 19:25:25 +0000  853551 bytes for ./iphoneos/libswiftObjectiveC.dylib
+2021-01-20 19:25:25 +0000  copying file ./iphoneos/libswiftCore.dylib ... 
+2021-01-20 19:25:25 +0000  140528485 bytes for ./iphoneos/libswiftCore.dylib
+copying file ./iphoneos/libswiftCoreGraphics.dylib ... 
+2021-01-20 19:25:25 +0000  2727342 bytes for ./iphoneos/libswiftCoreGraphics.dylib
+2021-01-20 19:25:25 +0000  copying file ./iphoneos/libswiftUIKit.dylib ... 
+2021-01-20 19:25:25 +0000  2211578 bytes for ./iphoneos/libswiftUIKit.dylib
+copying file ./iphoneos/libswiftMetal.dylib ... 
+2021-01-20 19:25:25 +0000  897158 bytes for ./iphoneos/libswiftMetal.dylib
+2021-01-20 19:25:25 +0000  copying file ./iphoneos/libswiftDispatch.dylib ... 
+2021-01-20 19:25:25 +0000  5501326 bytes for ./iphoneos/libswiftDispatch.dylib
+copying file ./iphoneos/libswiftos.dylib ... 
+2021-01-20 19:25:25 +0000  1136720 bytes for ./iphoneos/libswiftos.dylib
+copying file ./iphoneos/libswiftCoreFoundation.dylib ... 
+2021-01-20 19:25:25 +0000  503572 bytes for ./iphoneos/libswiftCoreFoundation.dylib
+copying file ./iphoneos/libswiftDarwin.dylib ... 
+2021-01-20 19:25:25 +0000  1412282 bytes for ./iphoneos/libswiftDarwin.dylib
+2021-01-20 19:25:25 +0000  copying file ./iphoneos/libswiftQuartzCore.dylib ... 
+580069 bytes for ./iphoneos/libswiftQuartzCore.dylib
+copying file ./iphoneos/libswiftFoundation.dylib ... 
+2021-01-20 19:25:26 +0000  62290314 bytes for ./iphoneos/libswiftFoundation.dylib
+2021-01-20 19:25:26 +0000  /usr/bin/ditto exited with 0
+2021-01-20 19:25:26 +0000  Processing step: IDEDistributionAppThinningStep
+2021-01-20 19:25:26 +0000  Skipping step: IDEDistributionAppThinningStep because it said so
+2021-01-20 19:25:26 +0000  Processing step: IDEDistributionArchThinningStep
+2021-01-20 19:25:26 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftCore.dylib' '-verify_arch' 'arm64e'
+2021-01-20 19:25:26 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-01-20 19:25:26 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftCore.dylib' '-remove' 'arm64e' '-output' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftCore.dylib'
+2021-01-20 19:25:26 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-01-20 19:25:26 +0000  Successfully thinned item "libswiftCore.dylib", arch "arm64e"
+2021-01-20 19:25:26 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftCoreFoundation.dylib' '-verify_arch' 'arm64e'
+2021-01-20 19:25:26 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-01-20 19:25:26 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftCoreFoundation.dylib' '-remove' 'arm64e' '-output' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftCoreFoundation.dylib'
+2021-01-20 19:25:26 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-01-20 19:25:26 +0000  Successfully thinned item "libswiftCoreFoundation.dylib", arch "arm64e"
+2021-01-20 19:25:26 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftCoreGraphics.dylib' '-verify_arch' 'arm64e'
+2021-01-20 19:25:26 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-01-20 19:25:26 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftCoreGraphics.dylib' '-remove' 'arm64e' '-output' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftCoreGraphics.dylib'
+2021-01-20 19:25:26 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-01-20 19:25:26 +0000  Successfully thinned item "libswiftCoreGraphics.dylib", arch "arm64e"
+2021-01-20 19:25:26 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftCoreImage.dylib' '-verify_arch' 'arm64e'
+2021-01-20 19:25:26 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-01-20 19:25:26 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftCoreImage.dylib' '-remove' 'arm64e' '-output' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftCoreImage.dylib'
+2021-01-20 19:25:26 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-01-20 19:25:26 +0000  Successfully thinned item "libswiftCoreImage.dylib", arch "arm64e"
+2021-01-20 19:25:26 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftDarwin.dylib' '-verify_arch' 'arm64e'
+2021-01-20 19:25:26 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-01-20 19:25:26 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftDarwin.dylib' '-remove' 'arm64e' '-output' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftDarwin.dylib'
+2021-01-20 19:25:26 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-01-20 19:25:26 +0000  Successfully thinned item "libswiftDarwin.dylib", arch "arm64e"
+2021-01-20 19:25:26 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftDispatch.dylib' '-verify_arch' 'arm64e'
+2021-01-20 19:25:26 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-01-20 19:25:26 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftDispatch.dylib' '-remove' 'arm64e' '-output' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftDispatch.dylib'
+2021-01-20 19:25:26 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-01-20 19:25:26 +0000  Successfully thinned item "libswiftDispatch.dylib", arch "arm64e"
+2021-01-20 19:25:26 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftFoundation.dylib' '-verify_arch' 'arm64e'
+2021-01-20 19:25:26 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-01-20 19:25:26 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftFoundation.dylib' '-remove' 'arm64e' '-output' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftFoundation.dylib'
+2021-01-20 19:25:26 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-01-20 19:25:26 +0000  Successfully thinned item "libswiftFoundation.dylib", arch "arm64e"
+2021-01-20 19:25:26 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftMetal.dylib' '-verify_arch' 'arm64e'
+2021-01-20 19:25:26 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-01-20 19:25:26 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftMetal.dylib' '-remove' 'arm64e' '-output' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftMetal.dylib'
+2021-01-20 19:25:26 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-01-20 19:25:26 +0000  Successfully thinned item "libswiftMetal.dylib", arch "arm64e"
+2021-01-20 19:25:26 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftObjectiveC.dylib' '-verify_arch' 'arm64e'
+2021-01-20 19:25:26 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-01-20 19:25:26 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftObjectiveC.dylib' '-remove' 'arm64e' '-output' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftObjectiveC.dylib'
+2021-01-20 19:25:26 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-01-20 19:25:26 +0000  Successfully thinned item "libswiftObjectiveC.dylib", arch "arm64e"
+2021-01-20 19:25:26 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftQuartzCore.dylib' '-verify_arch' 'arm64e'
+2021-01-20 19:25:26 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-01-20 19:25:26 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftQuartzCore.dylib' '-remove' 'arm64e' '-output' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftQuartzCore.dylib'
+2021-01-20 19:25:26 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-01-20 19:25:26 +0000  Successfully thinned item "libswiftQuartzCore.dylib", arch "arm64e"
+2021-01-20 19:25:26 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftUIKit.dylib' '-verify_arch' 'arm64e'
+2021-01-20 19:25:26 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-01-20 19:25:26 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftUIKit.dylib' '-remove' 'arm64e' '-output' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftUIKit.dylib'
+2021-01-20 19:25:26 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-01-20 19:25:26 +0000  Successfully thinned item "libswiftUIKit.dylib", arch "arm64e"
+2021-01-20 19:25:26 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftos.dylib' '-verify_arch' 'arm64e'
+2021-01-20 19:25:26 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-01-20 19:25:26 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftos.dylib' '-remove' 'arm64e' '-output' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftos.dylib'
+2021-01-20 19:25:26 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-01-20 19:25:26 +0000  Successfully thinned item "libswiftos.dylib", arch "arm64e"
+2021-01-20 19:25:26 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/astreaMobile' '-verify_arch' 'arm64e'
+2021-01-20 19:25:26 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2021-01-20 19:25:26 +0000  Skipping architecture thinning for item "astreaMobile" because arch "arm64e" wasn't found
+2021-01-20 19:25:26 +0000  Processing step: IDEDistributionODRStep
+2021-01-20 19:25:26 +0000  Processing step: IDEDistributionStripXattrsStep
+2021-01-20 19:25:26 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fc6d96fb640; bundleID='com.apple.dt.runtime.swiftCore', path='<DVTFilePath:0x7fc6de9172a0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftCore.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc70b699ab0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6d90c7c20; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc70d14aa00>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftCore', executablePath='<DVTFilePath:0x7fc6de9172a0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftCore.dylib'>', hardenedRuntime='0'>'>
+2021-01-20 19:25:26 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fc6de970640; bundleID='com.apple.dt.runtime.swiftCoreFoundation', path='<DVTFilePath:0x7fc7136bdbd0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftCoreFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6de604af0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6de62b880; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc7021c0760>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftCoreFoundation', executablePath='<DVTFilePath:0x7fc7136bdbd0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftCoreFoundation.dylib'>', hardenedRuntime='0'>'>
+2021-01-20 19:25:26 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fc6de83b100; bundleID='com.apple.dt.runtime.swiftCoreGraphics', path='<DVTFilePath:0x7fc6dd964cf0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftCoreGraphics.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6de9a9b50; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6de6422c0; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc7021527b0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftCoreGraphics', executablePath='<DVTFilePath:0x7fc6dd964cf0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftCoreGraphics.dylib'>', hardenedRuntime='0'>'>
+2021-01-20 19:25:26 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fc6dd352ec0; bundleID='com.apple.dt.runtime.swiftCoreImage', path='<DVTFilePath:0x7fc6de8049a0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftCoreImage.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6dd31c800; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6de6306e0; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc7021c8a40>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftCoreImage', executablePath='<DVTFilePath:0x7fc6de8049a0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftCoreImage.dylib'>', hardenedRuntime='0'>'>
+2021-01-20 19:25:26 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fc6dbd373d0; bundleID='com.apple.dt.runtime.swiftDarwin', path='<DVTFilePath:0x7fc6de3b9410:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftDarwin.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6dd6f1670; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6de62b8e0; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc70212c760>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftDarwin', executablePath='<DVTFilePath:0x7fc6de3b9410:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftDarwin.dylib'>', hardenedRuntime='0'>'>
+2021-01-20 19:25:26 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fc6dea5f0f0; bundleID='com.apple.dt.runtime.swiftDispatch', path='<DVTFilePath:0x7fc70f94a210:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftDispatch.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6de97c160; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6de61a6d0; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc7021a9b10>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftDispatch', executablePath='<DVTFilePath:0x7fc70f94a210:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftDispatch.dylib'>', hardenedRuntime='0'>'>
+2021-01-20 19:25:26 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fc6de3bc950; bundleID='com.apple.dt.runtime.swiftFoundation', path='<DVTFilePath:0x7fc6de348df0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6dea5f570; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6de61bf20; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc70216b650>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftFoundation', executablePath='<DVTFilePath:0x7fc6de348df0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftFoundation.dylib'>', hardenedRuntime='0'>'>
+2021-01-20 19:25:26 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fc6de8402d0; bundleID='com.apple.dt.runtime.swiftMetal', path='<DVTFilePath:0x7fc70c9b7740:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftMetal.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc70fed52b0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6de62bad0; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc7021c3960>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftMetal', executablePath='<DVTFilePath:0x7fc70c9b7740:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftMetal.dylib'>', hardenedRuntime='0'>'>
+2021-01-20 19:25:26 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fc6dea299d0; bundleID='com.apple.dt.runtime.swiftObjectiveC', path='<DVTFilePath:0x7fc6de8182d0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftObjectiveC.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6de330f60; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6de616a10; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc70213c120>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftObjectiveC', executablePath='<DVTFilePath:0x7fc6de8182d0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftObjectiveC.dylib'>', hardenedRuntime='0'>'>
+2021-01-20 19:25:26 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fc6de317310; bundleID='com.apple.dt.runtime.swiftQuartzCore', path='<DVTFilePath:0x7fc6de3b9de0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftQuartzCore.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc70b83fc70; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6de62be80; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc70211c970>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftQuartzCore', executablePath='<DVTFilePath:0x7fc6de3b9de0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftQuartzCore.dylib'>', hardenedRuntime='0'>'>
+2021-01-20 19:25:26 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fc6dde497a0; bundleID='com.apple.dt.runtime.swiftUIKit', path='<DVTFilePath:0x7fc6de819d40:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftUIKit.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6de9a9190; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6de669740; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc70216bc80>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftUIKit', executablePath='<DVTFilePath:0x7fc6de819d40:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftUIKit.dylib'>', hardenedRuntime='0'>'>
+2021-01-20 19:25:26 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fc6de8477e0; bundleID='com.apple.dt.runtime.swiftos', path='<DVTFilePath:0x7fc6de818ba0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftos.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6de3bd060; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6de81ec50; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc6e9695b90>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftos', executablePath='<DVTFilePath:0x7fc6de818ba0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftos.dylib'>', hardenedRuntime='0'>'>
+2021-01-20 19:25:26 +0000  Running /usr/bin/xattr '-crs' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app'
+2021-01-20 19:25:26 +0000  /usr/bin/xattr exited with 0
+2021-01-20 19:25:26 +0000  Processing step: IDEDistributionCodesignStep
+2021-01-20 19:25:26 +0000  Entitlements for <IDEDistributionItem: 0x7fc6d96fb640; bundleID='com.apple.dt.runtime.swiftCore', path='<DVTFilePath:0x7fc6de9172a0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftCore.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc70b699ab0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6de85c170; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc6e96689b0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftCore', executablePath='<DVTFilePath:0x7fc6de9172a0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftCore.dylib'>', hardenedRuntime='0'>'>: {
+}
+2021-01-20 19:25:26 +0000  Entitlements for <IDEDistributionItem: 0x7fc6d96fb640; bundleID='com.apple.dt.runtime.swiftCore', path='<DVTFilePath:0x7fc6de9172a0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftCore.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc70b699ab0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6d96d8fa0; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc6d96d9050>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftCore', executablePath='<DVTFilePath:0x7fc6de9172a0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftCore.dylib'>', hardenedRuntime='0'>'> are: {
+}
+2021-01-20 19:25:26 +0000  Writing entitlements for <IDEDistributionItem: 0x7fc6d96fb640; bundleID='com.apple.dt.runtime.swiftCore', path='<DVTFilePath:0x7fc6de9172a0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftCore.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc70b699ab0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6de85c5c0; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc6e9650360>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftCore', executablePath='<DVTFilePath:0x7fc6de9172a0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftCore.dylib'>', hardenedRuntime='0'>'> to: /var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/entitlements~~~aJt7Uc
+2021-01-20 19:25:26 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'A5D999BDE34085AAF76DAA45139EC8E43297E07B' '--entitlements' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/entitlements~~~aJt7Uc' '--preserve-metadata=identifier,flags,runtime' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftCore.dylib'
+2021-01-20 19:25:26 +0000  /var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftCore.dylib: replacing existing signature
+2021-01-20 19:25:27 +0000  /var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftCore.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCore]
+2021-01-20 19:25:27 +0000  /usr/bin/codesign exited with 0
+2021-01-20 19:25:27 +0000  Entitlements for <IDEDistributionItem: 0x7fc6de970640; bundleID='com.apple.dt.runtime.swiftCoreFoundation', path='<DVTFilePath:0x7fc7136bdbd0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftCoreFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6de604af0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6de3b3770; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc6dd9c61c0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftCoreFoundation', executablePath='<DVTFilePath:0x7fc7136bdbd0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftCoreFoundation.dylib'>', hardenedRuntime='0'>'>: {
+}
+2021-01-20 19:25:27 +0000  Entitlements for <IDEDistributionItem: 0x7fc6de970640; bundleID='com.apple.dt.runtime.swiftCoreFoundation', path='<DVTFilePath:0x7fc7136bdbd0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftCoreFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6de604af0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6de3ae9c0; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc6dd99c9e0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftCoreFoundation', executablePath='<DVTFilePath:0x7fc7136bdbd0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftCoreFoundation.dylib'>', hardenedRuntime='0'>'> are: {
+}
+2021-01-20 19:25:27 +0000  Writing entitlements for <IDEDistributionItem: 0x7fc6de970640; bundleID='com.apple.dt.runtime.swiftCoreFoundation', path='<DVTFilePath:0x7fc7136bdbd0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftCoreFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6de604af0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6de3c5d30; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc6dd96afb0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftCoreFoundation', executablePath='<DVTFilePath:0x7fc7136bdbd0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftCoreFoundation.dylib'>', hardenedRuntime='0'>'> to: /var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/entitlements~~~7usbgi
+2021-01-20 19:25:27 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'A5D999BDE34085AAF76DAA45139EC8E43297E07B' '--entitlements' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/entitlements~~~7usbgi' '--preserve-metadata=identifier,flags,runtime' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftCoreFoundation.dylib'
+2021-01-20 19:25:27 +0000  /var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftCoreFoundation.dylib: replacing existing signature
+2021-01-20 19:25:27 +0000  /var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftCoreFoundation.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCoreFoundation]
+2021-01-20 19:25:27 +0000  /usr/bin/codesign exited with 0
+2021-01-20 19:25:27 +0000  Entitlements for <IDEDistributionItem: 0x7fc6de83b100; bundleID='com.apple.dt.runtime.swiftCoreGraphics', path='<DVTFilePath:0x7fc6dd964cf0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftCoreGraphics.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6de9a9b50; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6de764030; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc6de98ee00>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftCoreGraphics', executablePath='<DVTFilePath:0x7fc6dd964cf0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftCoreGraphics.dylib'>', hardenedRuntime='0'>'>: {
+}
+2021-01-20 19:25:27 +0000  Entitlements for <IDEDistributionItem: 0x7fc6de83b100; bundleID='com.apple.dt.runtime.swiftCoreGraphics', path='<DVTFilePath:0x7fc6dd964cf0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftCoreGraphics.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6de9a9b50; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6de490e30; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc6de9627b0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftCoreGraphics', executablePath='<DVTFilePath:0x7fc6dd964cf0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftCoreGraphics.dylib'>', hardenedRuntime='0'>'> are: {
+}
+2021-01-20 19:25:27 +0000  Writing entitlements for <IDEDistributionItem: 0x7fc6de83b100; bundleID='com.apple.dt.runtime.swiftCoreGraphics', path='<DVTFilePath:0x7fc6dd964cf0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftCoreGraphics.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6de9a9b50; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6d96faca0; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc6de984000>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftCoreGraphics', executablePath='<DVTFilePath:0x7fc6dd964cf0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftCoreGraphics.dylib'>', hardenedRuntime='0'>'> to: /var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/entitlements~~~qVL8zI
+2021-01-20 19:25:27 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'A5D999BDE34085AAF76DAA45139EC8E43297E07B' '--entitlements' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/entitlements~~~qVL8zI' '--preserve-metadata=identifier,flags,runtime' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftCoreGraphics.dylib'
+2021-01-20 19:25:27 +0000  /var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftCoreGraphics.dylib: replacing existing signature
+2021-01-20 19:25:27 +0000  /var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftCoreGraphics.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCoreGraphics]
+2021-01-20 19:25:27 +0000  /usr/bin/codesign exited with 0
+2021-01-20 19:25:27 +0000  Entitlements for <IDEDistributionItem: 0x7fc6dd352ec0; bundleID='com.apple.dt.runtime.swiftCoreImage', path='<DVTFilePath:0x7fc6de8049a0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftCoreImage.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6dd31c800; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6d9652f00; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc6de9885d0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftCoreImage', executablePath='<DVTFilePath:0x7fc6de8049a0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftCoreImage.dylib'>', hardenedRuntime='0'>'>: {
+}
+2021-01-20 19:25:27 +0000  Entitlements for <IDEDistributionItem: 0x7fc6dd352ec0; bundleID='com.apple.dt.runtime.swiftCoreImage', path='<DVTFilePath:0x7fc6de8049a0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftCoreImage.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6dd31c800; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6de941ba0; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc70d14aa00>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftCoreImage', executablePath='<DVTFilePath:0x7fc6de8049a0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftCoreImage.dylib'>', hardenedRuntime='0'>'> are: {
+}
+2021-01-20 19:25:27 +0000  Writing entitlements for <IDEDistributionItem: 0x7fc6dd352ec0; bundleID='com.apple.dt.runtime.swiftCoreImage', path='<DVTFilePath:0x7fc6de8049a0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftCoreImage.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6dd31c800; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6dd964b80; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc6dd99cb60>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftCoreImage', executablePath='<DVTFilePath:0x7fc6de8049a0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftCoreImage.dylib'>', hardenedRuntime='0'>'> to: /var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/entitlements~~~dHD5nO
+2021-01-20 19:25:27 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'A5D999BDE34085AAF76DAA45139EC8E43297E07B' '--entitlements' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/entitlements~~~dHD5nO' '--preserve-metadata=identifier,flags,runtime' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftCoreImage.dylib'
+2021-01-20 19:25:27 +0000  /var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftCoreImage.dylib: replacing existing signature
+2021-01-20 19:25:27 +0000  /var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftCoreImage.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCoreImage]
+2021-01-20 19:25:27 +0000  /usr/bin/codesign exited with 0
+2021-01-20 19:25:27 +0000  Entitlements for <IDEDistributionItem: 0x7fc6dbd373d0; bundleID='com.apple.dt.runtime.swiftDarwin', path='<DVTFilePath:0x7fc6de3b9410:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftDarwin.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6dd6f1670; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6de3c2e90; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc6dd9c7870>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftDarwin', executablePath='<DVTFilePath:0x7fc6de3b9410:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftDarwin.dylib'>', hardenedRuntime='0'>'>: {
+}
+2021-01-20 19:25:27 +0000  Entitlements for <IDEDistributionItem: 0x7fc6dbd373d0; bundleID='com.apple.dt.runtime.swiftDarwin', path='<DVTFilePath:0x7fc6de3b9410:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftDarwin.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6dd6f1670; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6de3b79a0; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc6dd9962f0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftDarwin', executablePath='<DVTFilePath:0x7fc6de3b9410:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftDarwin.dylib'>', hardenedRuntime='0'>'> are: {
+}
+2021-01-20 19:25:27 +0000  Writing entitlements for <IDEDistributionItem: 0x7fc6dbd373d0; bundleID='com.apple.dt.runtime.swiftDarwin', path='<DVTFilePath:0x7fc6de3b9410:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftDarwin.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6dd6f1670; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6d90c7c20; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc702c48410>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftDarwin', executablePath='<DVTFilePath:0x7fc6de3b9410:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftDarwin.dylib'>', hardenedRuntime='0'>'> to: /var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/entitlements~~~xZGnVW
+2021-01-20 19:25:27 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'A5D999BDE34085AAF76DAA45139EC8E43297E07B' '--entitlements' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/entitlements~~~xZGnVW' '--preserve-metadata=identifier,flags,runtime' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftDarwin.dylib'
+2021-01-20 19:25:27 +0000  /var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftDarwin.dylib: replacing existing signature
+2021-01-20 19:25:28 +0000  /var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftDarwin.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftDarwin]
+2021-01-20 19:25:28 +0000  /usr/bin/codesign exited with 0
+2021-01-20 19:25:28 +0000  Entitlements for <IDEDistributionItem: 0x7fc6dea5f0f0; bundleID='com.apple.dt.runtime.swiftDispatch', path='<DVTFilePath:0x7fc70f94a210:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftDispatch.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6de97c160; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6de630980; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc702153180>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftDispatch', executablePath='<DVTFilePath:0x7fc70f94a210:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftDispatch.dylib'>', hardenedRuntime='0'>'>: {
+}
+2021-01-20 19:25:28 +0000  Entitlements for <IDEDistributionItem: 0x7fc6dea5f0f0; bundleID='com.apple.dt.runtime.swiftDispatch', path='<DVTFilePath:0x7fc70f94a210:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftDispatch.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6de97c160; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6de3b3070; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc6dd9afb90>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftDispatch', executablePath='<DVTFilePath:0x7fc70f94a210:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftDispatch.dylib'>', hardenedRuntime='0'>'> are: {
+}
+2021-01-20 19:25:28 +0000  Writing entitlements for <IDEDistributionItem: 0x7fc6dea5f0f0; bundleID='com.apple.dt.runtime.swiftDispatch', path='<DVTFilePath:0x7fc70f94a210:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftDispatch.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6de97c160; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6de3b7cd0; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc6dd995d30>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftDispatch', executablePath='<DVTFilePath:0x7fc70f94a210:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftDispatch.dylib'>', hardenedRuntime='0'>'> to: /var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/entitlements~~~gPq9hE
+2021-01-20 19:25:28 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'A5D999BDE34085AAF76DAA45139EC8E43297E07B' '--entitlements' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/entitlements~~~gPq9hE' '--preserve-metadata=identifier,flags,runtime' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftDispatch.dylib'
+2021-01-20 19:25:28 +0000  /var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftDispatch.dylib: replacing existing signature
+2021-01-20 19:25:28 +0000  /var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftDispatch.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftDispatch]
+2021-01-20 19:25:28 +0000  /usr/bin/codesign exited with 0
+2021-01-20 19:25:28 +0000  Entitlements for <IDEDistributionItem: 0x7fc6de3bc950; bundleID='com.apple.dt.runtime.swiftFoundation', path='<DVTFilePath:0x7fc6de348df0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6dea5f570; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6d90c7c20; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc70d638440>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftFoundation', executablePath='<DVTFilePath:0x7fc6de348df0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftFoundation.dylib'>', hardenedRuntime='0'>'>: {
+}
+2021-01-20 19:25:28 +0000  Entitlements for <IDEDistributionItem: 0x7fc6de3bc950; bundleID='com.apple.dt.runtime.swiftFoundation', path='<DVTFilePath:0x7fc6de348df0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6dea5f570; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6dd964b80; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc6eada5cd0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftFoundation', executablePath='<DVTFilePath:0x7fc6de348df0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftFoundation.dylib'>', hardenedRuntime='0'>'> are: {
+}
+2021-01-20 19:25:28 +0000  Writing entitlements for <IDEDistributionItem: 0x7fc6de3bc950; bundleID='com.apple.dt.runtime.swiftFoundation', path='<DVTFilePath:0x7fc6de348df0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6dea5f570; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6de61fa10; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc70214d530>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftFoundation', executablePath='<DVTFilePath:0x7fc6de348df0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftFoundation.dylib'>', hardenedRuntime='0'>'> to: /var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/entitlements~~~S87Jop
+2021-01-20 19:25:28 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'A5D999BDE34085AAF76DAA45139EC8E43297E07B' '--entitlements' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/entitlements~~~S87Jop' '--preserve-metadata=identifier,flags,runtime' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftFoundation.dylib'
+2021-01-20 19:25:28 +0000  /var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftFoundation.dylib: replacing existing signature
+2021-01-20 19:25:28 +0000  /var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftFoundation.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftFoundation]
+2021-01-20 19:25:28 +0000  /usr/bin/codesign exited with 0
+2021-01-20 19:25:28 +0000  Entitlements for <IDEDistributionItem: 0x7fc6de8402d0; bundleID='com.apple.dt.runtime.swiftMetal', path='<DVTFilePath:0x7fc70c9b7740:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftMetal.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc70fed52b0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6de85c500; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc6e96845f0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftMetal', executablePath='<DVTFilePath:0x7fc70c9b7740:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftMetal.dylib'>', hardenedRuntime='0'>'>: {
+}
+2021-01-20 19:25:28 +0000  Entitlements for <IDEDistributionItem: 0x7fc6de8402d0; bundleID='com.apple.dt.runtime.swiftMetal', path='<DVTFilePath:0x7fc70c9b7740:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftMetal.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc70fed52b0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6de630580; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc7021733d0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftMetal', executablePath='<DVTFilePath:0x7fc70c9b7740:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftMetal.dylib'>', hardenedRuntime='0'>'> are: {
+}
+2021-01-20 19:25:28 +0000  Writing entitlements for <IDEDistributionItem: 0x7fc6de8402d0; bundleID='com.apple.dt.runtime.swiftMetal', path='<DVTFilePath:0x7fc70c9b7740:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftMetal.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc70fed52b0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6de8617a0; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc6e961c230>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftMetal', executablePath='<DVTFilePath:0x7fc70c9b7740:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftMetal.dylib'>', hardenedRuntime='0'>'> to: /var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/entitlements~~~zKUv5D
+2021-01-20 19:25:28 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'A5D999BDE34085AAF76DAA45139EC8E43297E07B' '--entitlements' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/entitlements~~~zKUv5D' '--preserve-metadata=identifier,flags,runtime' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftMetal.dylib'
+2021-01-20 19:25:28 +0000  /var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftMetal.dylib: replacing existing signature
+2021-01-20 19:25:28 +0000  /var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftMetal.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftMetal]
+2021-01-20 19:25:28 +0000  /usr/bin/codesign exited with 0
+2021-01-20 19:25:28 +0000  Entitlements for <IDEDistributionItem: 0x7fc6dea299d0; bundleID='com.apple.dt.runtime.swiftObjectiveC', path='<DVTFilePath:0x7fc6de8182d0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftObjectiveC.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6de330f60; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6d90c7c20; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc70d638440>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftObjectiveC', executablePath='<DVTFilePath:0x7fc6de8182d0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftObjectiveC.dylib'>', hardenedRuntime='0'>'>: {
+}
+2021-01-20 19:25:28 +0000  Entitlements for <IDEDistributionItem: 0x7fc6dea299d0; bundleID='com.apple.dt.runtime.swiftObjectiveC', path='<DVTFilePath:0x7fc6de8182d0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftObjectiveC.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6de330f60; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6de85bb20; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc6eb4957e0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftObjectiveC', executablePath='<DVTFilePath:0x7fc6de8182d0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftObjectiveC.dylib'>', hardenedRuntime='0'>'> are: {
+}
+2021-01-20 19:25:28 +0000  Writing entitlements for <IDEDistributionItem: 0x7fc6dea299d0; bundleID='com.apple.dt.runtime.swiftObjectiveC', path='<DVTFilePath:0x7fc6de8182d0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftObjectiveC.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6de330f60; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6de85fe30; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc6e967e7f0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftObjectiveC', executablePath='<DVTFilePath:0x7fc6de8182d0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftObjectiveC.dylib'>', hardenedRuntime='0'>'> to: /var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/entitlements~~~kxRycU
+2021-01-20 19:25:28 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'A5D999BDE34085AAF76DAA45139EC8E43297E07B' '--entitlements' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/entitlements~~~kxRycU' '--preserve-metadata=identifier,flags,runtime' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftObjectiveC.dylib'
+2021-01-20 19:25:28 +0000  /var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftObjectiveC.dylib: replacing existing signature
+2021-01-20 19:25:28 +0000  /var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftObjectiveC.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftObjectiveC]
+2021-01-20 19:25:28 +0000  /usr/bin/codesign exited with 0
+2021-01-20 19:25:28 +0000  Entitlements for <IDEDistributionItem: 0x7fc6de317310; bundleID='com.apple.dt.runtime.swiftQuartzCore', path='<DVTFilePath:0x7fc6de3b9de0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftQuartzCore.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc70b83fc70; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6de85a850; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc6e9646670>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftQuartzCore', executablePath='<DVTFilePath:0x7fc6de3b9de0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftQuartzCore.dylib'>', hardenedRuntime='0'>'>: {
+}
+2021-01-20 19:25:28 +0000  Entitlements for <IDEDistributionItem: 0x7fc6de317310; bundleID='com.apple.dt.runtime.swiftQuartzCore', path='<DVTFilePath:0x7fc6de3b9de0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftQuartzCore.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc70b83fc70; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6de8614e0; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc6e961c230>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftQuartzCore', executablePath='<DVTFilePath:0x7fc6de3b9de0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftQuartzCore.dylib'>', hardenedRuntime='0'>'> are: {
+}
+2021-01-20 19:25:28 +0000  Writing entitlements for <IDEDistributionItem: 0x7fc6de317310; bundleID='com.apple.dt.runtime.swiftQuartzCore', path='<DVTFilePath:0x7fc6de3b9de0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftQuartzCore.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc70b83fc70; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6d96ebc90; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc702c48410>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftQuartzCore', executablePath='<DVTFilePath:0x7fc6de3b9de0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftQuartzCore.dylib'>', hardenedRuntime='0'>'> to: /var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/entitlements~~~WyxvDy
+2021-01-20 19:25:28 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'A5D999BDE34085AAF76DAA45139EC8E43297E07B' '--entitlements' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/entitlements~~~WyxvDy' '--preserve-metadata=identifier,flags,runtime' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftQuartzCore.dylib'
+2021-01-20 19:25:28 +0000  /var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftQuartzCore.dylib: replacing existing signature
+2021-01-20 19:25:28 +0000  /var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftQuartzCore.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftQuartzCore]
+2021-01-20 19:25:28 +0000  /usr/bin/codesign exited with 0
+2021-01-20 19:25:28 +0000  Entitlements for <IDEDistributionItem: 0x7fc6dde497a0; bundleID='com.apple.dt.runtime.swiftUIKit', path='<DVTFilePath:0x7fc6de819d40:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftUIKit.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6de9a9190; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6de3afff0; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc6dd9bf930>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftUIKit', executablePath='<DVTFilePath:0x7fc6de819d40:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftUIKit.dylib'>', hardenedRuntime='0'>'>: {
+}
+2021-01-20 19:25:28 +0000  Entitlements for <IDEDistributionItem: 0x7fc6dde497a0; bundleID='com.apple.dt.runtime.swiftUIKit', path='<DVTFilePath:0x7fc6de819d40:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftUIKit.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6de9a9190; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6de3c4410; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc6dd98e7a0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftUIKit', executablePath='<DVTFilePath:0x7fc6de819d40:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftUIKit.dylib'>', hardenedRuntime='0'>'> are: {
+}
+2021-01-20 19:25:28 +0000  Writing entitlements for <IDEDistributionItem: 0x7fc6dde497a0; bundleID='com.apple.dt.runtime.swiftUIKit', path='<DVTFilePath:0x7fc6de819d40:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftUIKit.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6de9a9190; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6de3c69b0; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc6dd99f450>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftUIKit', executablePath='<DVTFilePath:0x7fc6de819d40:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftUIKit.dylib'>', hardenedRuntime='0'>'> to: /var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/entitlements~~~rmHoda
+2021-01-20 19:25:28 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'A5D999BDE34085AAF76DAA45139EC8E43297E07B' '--entitlements' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/entitlements~~~rmHoda' '--preserve-metadata=identifier,flags,runtime' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftUIKit.dylib'
+2021-01-20 19:25:28 +0000  /var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftUIKit.dylib: replacing existing signature
+2021-01-20 19:25:28 +0000  /var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftUIKit.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftUIKit]
+2021-01-20 19:25:28 +0000  /usr/bin/codesign exited with 0
+2021-01-20 19:25:28 +0000  Entitlements for <IDEDistributionItem: 0x7fc6de8477e0; bundleID='com.apple.dt.runtime.swiftos', path='<DVTFilePath:0x7fc6de818ba0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftos.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6de3bd060; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6de97fe30; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc70d638440>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftos', executablePath='<DVTFilePath:0x7fc6de818ba0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftos.dylib'>', hardenedRuntime='0'>'>: {
+}
+2021-01-20 19:25:28 +0000  Entitlements for <IDEDistributionItem: 0x7fc6de8477e0; bundleID='com.apple.dt.runtime.swiftos', path='<DVTFilePath:0x7fc6de818ba0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftos.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6de3bd060; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6de49d1f0; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc6de967d70>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftos', executablePath='<DVTFilePath:0x7fc6de818ba0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftos.dylib'>', hardenedRuntime='0'>'> are: {
+}
+2021-01-20 19:25:28 +0000  Writing entitlements for <IDEDistributionItem: 0x7fc6de8477e0; bundleID='com.apple.dt.runtime.swiftos', path='<DVTFilePath:0x7fc6de818ba0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftos.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6de3bd060; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6d90c3360; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc6de98f8c0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='(null)', teamID='Q7PJN6XJ4Q', identifier='com.apple.dt.runtime.swiftos', executablePath='<DVTFilePath:0x7fc6de818ba0:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/Frameworks/libswiftos.dylib'>', hardenedRuntime='0'>'> to: /var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/entitlements~~~Dnpfhc
+2021-01-20 19:25:28 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'A5D999BDE34085AAF76DAA45139EC8E43297E07B' '--entitlements' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/entitlements~~~Dnpfhc' '--preserve-metadata=identifier,flags,runtime' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftos.dylib'
+2021-01-20 19:25:28 +0000  /var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftos.dylib: replacing existing signature
+2021-01-20 19:25:29 +0000  /var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftos.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftos]
+2021-01-20 19:25:29 +0000  /usr/bin/codesign exited with 0
+2021-01-20 19:25:29 +0000  Entitlements for <IDEDistributionItem: 0x7fc6de849810; bundleID='br.net.astrea.app', path='<DVTFilePath:0x7fc6e9696980:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6de60dac0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6de85fdb0; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc6e9690fc0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='{
+    "application-identifier" = "Q7PJN6XJ4Q.br.net.astrea.app";
+    "com.apple.developer.team-identifier" = Q7PJN6XJ4Q;
+    "get-task-allow" = 1;
+    "keychain-access-groups" =     (
+        "Q7PJN6XJ4Q.br.net.astrea.app"
+    );
+}', teamID='Q7PJN6XJ4Q', identifier='br.net.astrea.app', executablePath='<DVTFilePath:0x7fc6de80a780:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/astreaMobile'>', hardenedRuntime='0'>'>: {
+    "application-identifier" = "Q7PJN6XJ4Q.br.net.astrea.app";
+    "beta-reports-active" = 1;
+    "com.apple.developer.team-identifier" = Q7PJN6XJ4Q;
+    "get-task-allow" = 0;
+    "keychain-access-groups" =     (
+        "Q7PJN6XJ4Q.br.net.astrea.app"
+    );
+}
+2021-01-20 19:25:29 +0000  Entitlements for <IDEDistributionItem: 0x7fc6de849810; bundleID='br.net.astrea.app', path='<DVTFilePath:0x7fc6e9696980:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6de60dac0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6de810300; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc6e961c230>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='{
+    "application-identifier" = "Q7PJN6XJ4Q.br.net.astrea.app";
+    "com.apple.developer.team-identifier" = Q7PJN6XJ4Q;
+    "get-task-allow" = 1;
+    "keychain-access-groups" =     (
+        "Q7PJN6XJ4Q.br.net.astrea.app"
+    );
+}', teamID='Q7PJN6XJ4Q', identifier='br.net.astrea.app', executablePath='<DVTFilePath:0x7fc6de80a780:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/astreaMobile'>', hardenedRuntime='0'>'> are: {
+    "application-identifier" = "Q7PJN6XJ4Q.br.net.astrea.app";
+    "beta-reports-active" = 1;
+    "com.apple.developer.team-identifier" = Q7PJN6XJ4Q;
+    "get-task-allow" = 0;
+    "keychain-access-groups" =     (
+        "Q7PJN6XJ4Q.br.net.astrea.app"
+    );
+}
+2021-01-20 19:25:29 +0000  Writing entitlements for <IDEDistributionItem: 0x7fc6de849810; bundleID='br.net.astrea.app', path='<DVTFilePath:0x7fc6e9696980:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc6de60dac0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc6de868900; name='Apple Development: Luiz Fernando de Morais (LMKUMT437Q)', hash='0B3FFC42C12F023B3E81CBBC7D4AF6A01F94946F', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fc6e965b5b0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-28 13:28:22 +0000''>', entitlements='{
+    "application-identifier" = "Q7PJN6XJ4Q.br.net.astrea.app";
+    "com.apple.developer.team-identifier" = Q7PJN6XJ4Q;
+    "get-task-allow" = 1;
+    "keychain-access-groups" =     (
+        "Q7PJN6XJ4Q.br.net.astrea.app"
+    );
+}', teamID='Q7PJN6XJ4Q', identifier='br.net.astrea.app', executablePath='<DVTFilePath:0x7fc6de80a780:'/Users/luizmorais/Library/Developer/Xcode/Archives/2021-01-20/astreaMobile 20-01-21 16.24.xcarchive/Products/Applications/astreaMobile.app/astreaMobile'>', hardenedRuntime='0'>'> to: /var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/entitlements~~~484fCU
+2021-01-20 19:25:29 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'A5D999BDE34085AAF76DAA45139EC8E43297E07B' '--entitlements' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/entitlements~~~484fCU' '--preserve-metadata=identifier,flags,runtime' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app'
+2021-01-20 19:25:30 +0000  /var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app: signed app bundle with Mach-O universal (armv7 arm64) [br.net.astrea.app]
+2021-01-20 19:25:30 +0000  /usr/bin/codesign exited with 0
+2021-01-20 19:25:30 +0000  Processing step: IDEDistributionZipODRItemStep
+2021-01-20 19:25:30 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-01-20 19:25:30 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-01-20 19:25:30 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-01-20 19:25:30 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-01-20 19:25:30 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-01-20 19:25:30 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-01-20 19:25:30 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-01-20 19:25:30 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-01-20 19:25:30 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-01-20 19:25:30 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-01-20 19:25:30 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-01-20 19:25:30 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-01-20 19:25:30 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-01-20 19:25:30 +0000  Processing step: IDEDistributionCreateIPAStep
+2021-01-20 19:25:30 +0000  Running /usr/bin/ditto '-V' '-c' '-k' '--norsrc' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root' '/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Packages/astreaMobile.ipa'
+2021-01-20 19:25:30 +0000  >>> Copying /var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root 
+2021-01-20 19:25:30 +0000  copying file ./BCSymbolMaps/FEE7C4F8-B706-34F6-962C-768F0A8AB2EF.bcsymbolmap ... 
+2021-01-20 19:25:30 +0000  2916604 bytes for ./BCSymbolMaps/FEE7C4F8-B706-34F6-962C-768F0A8AB2EF.bcsymbolmap
+2021-01-20 19:25:30 +0000  copying file ./BCSymbolMaps/717314CE-EB60-33DA-AD4E-3CBD28D2DE53.bcsymbolmap ... 
+2021-01-20 19:25:30 +0000  2885912 bytes for ./BCSymbolMaps/717314CE-EB60-33DA-AD4E-3CBD28D2DE53.bcsymbolmap
+2021-01-20 19:25:30 +0000  copying file ./Payload/astreaMobile.app/_CodeSignature/CodeResources ... 
+2021-01-20 19:25:30 +0000  23933 bytes for ./Payload/astreaMobile.app/_CodeSignature/CodeResources
+2021-01-20 19:25:30 +0000  copying file ./Payload/astreaMobile.app/Fontisto.ttf ... 
+2021-01-20 19:25:30 +0000  313528 bytes for ./Payload/astreaMobile.app/Fontisto.ttf
+2021-01-20 19:25:30 +0000  copying file ./Payload/astreaMobile.app/Octicons.ttf ... 
+2021-01-20 19:25:30 +0000  28364 bytes for ./Payload/astreaMobile.app/Octicons.ttf
+copying file ./Payload/astreaMobile.app/Feather.ttf ... 
+2021-01-20 19:25:30 +0000  58272 bytes for ./Payload/astreaMobile.app/Feather.ttf
+copying file ./Payload/astreaMobile.app/AppIcon20x20@2x.png ... 
+2021-01-20 19:25:30 +0000  505 bytes for ./Payload/astreaMobile.app/AppIcon20x20@2x.png
+copying file ./Payload/astreaMobile.app/Entypo.ttf ... 
+2021-01-20 19:25:30 +0000  65584 bytes for ./Payload/astreaMobile.app/Entypo.ttf
+copying file ./Payload/astreaMobile.app/AppIcon20x20@3x.png ... 
+2021-01-20 19:25:30 +0000  580 bytes for ./Payload/astreaMobile.app/AppIcon20x20@3x.png
+copying file ./Payload/astreaMobile.app/FontAwesome5_Brands.ttf ... 
+2021-01-20 19:25:30 +0000  125016 bytes for ./Payload/astreaMobile.app/FontAwesome5_Brands.ttf
+2021-01-20 19:25:30 +0000  copying file ./Payload/astreaMobile.app/MaterialCommunityIcons.ttf ... 
+2021-01-20 19:25:30 +0000  546548 bytes for ./Payload/astreaMobile.app/MaterialCommunityIcons.ttf
+2021-01-20 19:25:30 +0000  copying file ./Payload/astreaMobile.app/AppIcon60x60@2x.png ... 
+1062 bytes for ./Payload/astreaMobile.app/AppIcon60x60@2x.png
+copying file ./Payload/astreaMobile.app/AppIcon29x29@2x.png ... 
+2021-01-20 19:25:30 +0000  575 bytes for ./Payload/astreaMobile.app/AppIcon29x29@2x.png
+copying file ./Payload/astreaMobile.app/AntDesign.ttf ... 
+2021-01-20 19:25:30 +0000  70344 bytes for ./Payload/astreaMobile.app/AntDesign.ttf
+2021-01-20 19:25:30 +0000  copying file ./Payload/astreaMobile.app/AppIcon40x40@3x.png ... 
+1062 bytes for ./Payload/astreaMobile.app/AppIcon40x40@3x.png
+copying file ./Payload/astreaMobile.app/Foundation.ttf ... 
+2021-01-20 19:25:30 +0000  56976 bytes for ./Payload/astreaMobile.app/Foundation.ttf
+2021-01-20 19:25:30 +0000  copying file ./Payload/astreaMobile.app/Ionicons.ttf ... 
+2021-01-20 19:25:30 +0000  112472 bytes for ./Payload/astreaMobile.app/Ionicons.ttf
+copying file ./Payload/astreaMobile.app/FontAwesome5_Solid.ttf ... 
+2021-01-20 19:25:30 +0000  186228 bytes for ./Payload/astreaMobile.app/FontAwesome5_Solid.ttf
+copying file ./Payload/astreaMobile.app/AppIcon40x40@2x.png ... 
+2021-01-20 19:25:30 +0000  887 bytes for ./Payload/astreaMobile.app/AppIcon40x40@2x.png
+copying file ./Payload/astreaMobile.app/FontAwesome5_Regular.ttf ... 
+2021-01-20 19:25:30 +0000  34092 bytes for ./Payload/astreaMobile.app/FontAwesome5_Regular.ttf
+copying file ./Payload/astreaMobile.app/AppIcon29x29@3x.png ... 
+2021-01-20 19:25:30 +0000  910 bytes for ./Payload/astreaMobile.app/AppIcon29x29@3x.png
+copying file ./Payload/astreaMobile.app/AppIcon60x60@3x.png ... 
+2021-01-20 19:25:30 +0000  1343 bytes for ./Payload/astreaMobile.app/AppIcon60x60@3x.png
+2021-01-20 19:25:30 +0000  copying file ./Payload/astreaMobile.app/Base.lproj/LaunchScreen.nib ... 
+2021-01-20 19:25:30 +0000  1506 bytes for ./Payload/astreaMobile.app/Base.lproj/LaunchScreen.nib
+copying file ./Payload/astreaMobile.app/FontAwesome.ttf ... 
+2021-01-20 19:25:30 +0000  165548 bytes for ./Payload/astreaMobile.app/FontAwesome.ttf
+copying file ./Payload/astreaMobile.app/Zocial.ttf ... 
+2021-01-20 19:25:30 +0000  25552 bytes for ./Payload/astreaMobile.app/Zocial.ttf
+copying file ./Payload/astreaMobile.app/Assets.car ... 
+2021-01-20 19:25:30 +0000  51023 bytes for ./Payload/astreaMobile.app/Assets.car
+copying file ./Payload/astreaMobile.app/EvilIcons.ttf ... 
+2021-01-20 19:25:30 +0000  13456 bytes for ./Payload/astreaMobile.app/EvilIcons.ttf
+copying file ./Payload/astreaMobile.app/MuseoSans-500.otf ... 
+2021-01-20 19:25:30 +0000  62504 bytes for ./Payload/astreaMobile.app/MuseoSans-500.otf
+2021-01-20 19:25:30 +0000  copying file ./Payload/astreaMobile.app/astreaMobile ... 
+2021-01-20 19:25:32 +0000  66802864 bytes for ./Payload/astreaMobile.app/astreaMobile
+copying file ./Payload/astreaMobile.app/main.jsbundle ... 
+2021-01-20 19:25:32 +0000  2812819 bytes for ./Payload/astreaMobile.app/main.jsbundle
+2021-01-20 19:25:32 +0000  copying file ./Payload/astreaMobile.app/MuseoSans-700.otf ... 
+2021-01-20 19:25:32 +0000  63568 bytes for ./Payload/astreaMobile.app/MuseoSans-700.otf
+2021-01-20 19:25:32 +0000  copying file ./Payload/astreaMobile.app/Frameworks/libswiftCoreImage.dylib ... 
+2021-01-20 19:25:32 +0000  352368 bytes for ./Payload/astreaMobile.app/Frameworks/libswiftCoreImage.dylib
+copying file ./Payload/astreaMobile.app/Frameworks/libswiftObjectiveC.dylib ... 
+2021-01-20 19:25:32 +0000  500080 bytes for ./Payload/astreaMobile.app/Frameworks/libswiftObjectiveC.dylib
+copying file ./Payload/astreaMobile.app/Frameworks/libswiftCore.dylib ... 
+2021-01-20 19:25:34 +0000  69852784 bytes for ./Payload/astreaMobile.app/Frameworks/libswiftCore.dylib
+copying file ./Payload/astreaMobile.app/Frameworks/libswiftCoreGraphics.dylib ... 
+2021-01-20 19:25:34 +0000  1535328 bytes for ./Payload/astreaMobile.app/Frameworks/libswiftCoreGraphics.dylib
+2021-01-20 19:25:34 +0000  copying file ./Payload/astreaMobile.app/Frameworks/libswiftUIKit.dylib ... 
+2021-01-20 19:25:34 +0000  1200976 bytes for ./Payload/astreaMobile.app/Frameworks/libswiftUIKit.dylib
+copying file ./Payload/astreaMobile.app/Frameworks/libswiftMetal.dylib ... 
+2021-01-20 19:25:34 +0000  544912 bytes for ./Payload/astreaMobile.app/Frameworks/libswiftMetal.dylib
+2021-01-20 19:25:34 +0000  copying file ./Payload/astreaMobile.app/Frameworks/libswiftDispatch.dylib ... 
+2021-01-20 19:25:34 +0000  2993312 bytes for ./Payload/astreaMobile.app/Frameworks/libswiftDispatch.dylib
+2021-01-20 19:25:34 +0000  copying file ./Payload/astreaMobile.app/Frameworks/libswiftos.dylib ... 
+2021-01-20 19:25:34 +0000  644944 bytes for ./Payload/astreaMobile.app/Frameworks/libswiftos.dylib
+2021-01-20 19:25:34 +0000  copying file ./Payload/astreaMobile.app/Frameworks/libswiftCoreFoundation.dylib ... 
+2021-01-20 19:25:34 +0000  335920 bytes for ./Payload/astreaMobile.app/Frameworks/libswiftCoreFoundation.dylib
+copying file ./Payload/astreaMobile.app/Frameworks/libswiftDarwin.dylib ... 
+2021-01-20 19:25:34 +0000  813968 bytes for ./Payload/astreaMobile.app/Frameworks/libswiftDarwin.dylib
+2021-01-20 19:25:34 +0000  copying file ./Payload/astreaMobile.app/Frameworks/libswiftQuartzCore.dylib ... 
+2021-01-20 19:25:34 +0000  355584 bytes for ./Payload/astreaMobile.app/Frameworks/libswiftQuartzCore.dylib
+2021-01-20 19:25:34 +0000  copying file ./Payload/astreaMobile.app/Frameworks/libswiftFoundation.dylib ... 
+2021-01-20 19:25:35 +0000  31957072 bytes for ./Payload/astreaMobile.app/Frameworks/libswiftFoundation.dylib
+2021-01-20 19:25:35 +0000  copying file ./Payload/astreaMobile.app/SimpleLineIcons.ttf ... 
+2021-01-20 19:25:35 +0000  54056 bytes for ./Payload/astreaMobile.app/SimpleLineIcons.ttf
+copying file ./Payload/astreaMobile.app/embedded.mobileprovision ... 
+2021-01-20 19:25:35 +0000  11395 bytes for ./Payload/astreaMobile.app/embedded.mobileprovision
+2021-01-20 19:25:35 +0000  copying file ./Payload/astreaMobile.app/assets/node_modules/css-color-keywords/colors.json ... 
+2021-01-20 19:25:35 +0000  3796 bytes for ./Payload/astreaMobile.app/assets/node_modules/css-color-keywords/colors.json
+2021-01-20 19:25:35 +0000  copying file ./Payload/astreaMobile.app/assets/node_modules/dom-serializer/foreignNames.json ... 
+2021-01-20 19:25:35 +0000  3149 bytes for ./Payload/astreaMobile.app/assets/node_modules/dom-serializer/foreignNames.json
+2021-01-20 19:25:35 +0000  copying file ./Payload/astreaMobile.app/assets/node_modules/react-native-calendar-strip/src/img/left-arrow-black.png ... 
+2021-01-20 19:25:35 +0000  311 bytes for ./Payload/astreaMobile.app/assets/node_modules/react-native-calendar-strip/src/img/left-arrow-black.png
+copying file ./Payload/astreaMobile.app/assets/node_modules/react-native-calendar-strip/src/img/right-arrow-black.png ... 
+304 bytes for ./Payload/astreaMobile.app/assets/node_modules/react-native-calendar-strip/src/img/right-arrow-black.png
+2021-01-20 19:25:35 +0000  copying file ./Payload/astreaMobile.app/assets/node_modules/react-native-vector-icons/glyphmaps/Ionicons.json ... 
+2021-01-20 19:25:35 +0000  17166 bytes for ./Payload/astreaMobile.app/assets/node_modules/react-native-vector-icons/glyphmaps/Ionicons.json
+2021-01-20 19:25:35 +0000  copying file ./Payload/astreaMobile.app/assets/node_modules/react-native-vector-icons/glyphmaps/FontAwesome5Free_meta.json ... 
+2021-01-20 19:25:35 +0000  26240 bytes for ./Payload/astreaMobile.app/assets/node_modules/react-native-vector-icons/glyphmaps/FontAwesome5Free_meta.json
+2021-01-20 19:25:35 +0000  copying file ./Payload/astreaMobile.app/assets/node_modules/react-native-vector-icons/glyphmaps/MaterialIcons.json ... 
+2021-01-20 19:25:35 +0000  22815 bytes for ./Payload/astreaMobile.app/assets/node_modules/react-native-vector-icons/glyphmaps/MaterialIcons.json
+copying file ./Payload/astreaMobile.app/assets/node_modules/react-native-vector-icons/glyphmaps/FontAwesome5Free.json ... 
+2021-01-20 19:25:35 +0000  30175 bytes for ./Payload/astreaMobile.app/assets/node_modules/react-native-vector-icons/glyphmaps/FontAwesome5Free.json
+2021-01-20 19:25:35 +0000  copying file ./Payload/astreaMobile.app/assets/node_modules/react-native-vector-icons/glyphmaps/MaterialCommunityIcons.json ... 
+2021-01-20 19:25:35 +0000  97065 bytes for ./Payload/astreaMobile.app/assets/node_modules/react-native-vector-icons/glyphmaps/MaterialCommunityIcons.json
+2021-01-20 19:25:35 +0000  copying file ./Payload/astreaMobile.app/assets/node_modules/react-native-calendars/src/calendar/img/previous@2x.png ... 
+2021-01-20 19:25:35 +0000  458 bytes for ./Payload/astreaMobile.app/assets/node_modules/react-native-calendars/src/calendar/img/previous@2x.png
+copying file ./Payload/astreaMobile.app/assets/node_modules/react-native-calendars/src/calendar/img/next@2x.png ... 
+2021-01-20 19:25:35 +0000  462 bytes for ./Payload/astreaMobile.app/assets/node_modules/react-native-calendars/src/calendar/img/next@2x.png
+2021-01-20 19:25:35 +0000  copying file ./Payload/astreaMobile.app/assets/node_modules/react-native-calendars/src/img/down@3x.png ... 
+2021-01-20 19:25:35 +0000  508 bytes for ./Payload/astreaMobile.app/assets/node_modules/react-native-calendars/src/img/down@3x.png
+copying file ./Payload/astreaMobile.app/assets/node_modules/react-native-calendars/src/img/down@2x.png ... 
+2021-01-20 19:25:35 +0000  354 bytes for ./Payload/astreaMobile.app/assets/node_modules/react-native-calendars/src/img/down@2x.png
+copying file ./Payload/astreaMobile.app/assets/node_modules/react-native-calendars/src/img/up.png ... 
+215 bytes for ./Payload/astreaMobile.app/assets/node_modules/react-native-calendars/src/img/up.png
+2021-01-20 19:25:35 +0000  copying file ./Payload/astreaMobile.app/assets/node_modules/react-native-calendars/src/img/down.png ... 
+208 bytes for ./Payload/astreaMobile.app/assets/node_modules/react-native-calendars/src/img/down.png
+2021-01-20 19:25:35 +0000  copying file ./Payload/astreaMobile.app/assets/node_modules/react-native-calendars/src/img/up@2x.png ... 
+2021-01-20 19:25:35 +0000  347 bytes for ./Payload/astreaMobile.app/assets/node_modules/react-native-calendars/src/img/up@2x.png
+copying file ./Payload/astreaMobile.app/assets/node_modules/react-native-calendars/src/img/up@3x.png ... 
+2021-01-20 19:25:35 +0000  504 bytes for ./Payload/astreaMobile.app/assets/node_modules/react-native-calendars/src/img/up@3x.png
+2021-01-20 19:25:35 +0000  copying file ./Payload/astreaMobile.app/assets/node_modules/entities/lib/maps/xml.json ... 
+2021-01-20 19:25:35 +0000  64 bytes for ./Payload/astreaMobile.app/assets/node_modules/entities/lib/maps/xml.json
+copying file ./Payload/astreaMobile.app/assets/node_modules/entities/lib/maps/decode.json ... 
+2021-01-20 19:25:35 +0000  356 bytes for ./Payload/astreaMobile.app/assets/node_modules/entities/lib/maps/decode.json
+copying file ./Payload/astreaMobile.app/assets/node_modules/entities/lib/maps/entities.json ... 
+2021-01-20 19:25:35 +0000  44868 bytes for ./Payload/astreaMobile.app/assets/node_modules/entities/lib/maps/entities.json
+2021-01-20 19:25:35 +0000  copying file ./Payload/astreaMobile.app/assets/node_modules/entities/lib/maps/legacy.json ... 
+2021-01-20 19:25:35 +0000  1961 bytes for ./Payload/astreaMobile.app/assets/node_modules/entities/lib/maps/legacy.json
+2021-01-20 19:25:35 +0000  copying file ./Payload/astreaMobile.app/assets/node_modules/react-native-code-push/package.json ... 
+2021-01-20 19:25:35 +0000  2772 bytes for ./Payload/astreaMobile.app/assets/node_modules/react-native-code-push/package.json
+2021-01-20 19:25:35 +0000  copying file ./Payload/astreaMobile.app/assets/i18n/es_AR.json ... 
+2021-01-20 19:25:35 +0000  803 bytes for ./Payload/astreaMobile.app/assets/i18n/es_AR.json
+copying file ./Payload/astreaMobile.app/assets/i18n/pt_BR.json ... 
+2021-01-20 19:25:35 +0000  16464 bytes for ./Payload/astreaMobile.app/assets/i18n/pt_BR.json
+2021-01-20 19:25:35 +0000  copying file ./Payload/astreaMobile.app/assets/assets/animations/loading.json ... 
+2021-01-20 19:25:35 +0000  7316 bytes for ./Payload/astreaMobile.app/assets/assets/animations/loading.json
+2021-01-20 19:25:35 +0000  copying file ./Payload/astreaMobile.app/Info.plist ... 
+2021-01-20 19:25:35 +0000  1865 bytes for ./Payload/astreaMobile.app/Info.plist
+copying file ./Payload/astreaMobile.app/PkgInfo ... 
+2021-01-20 19:25:35 +0000  8 bytes for ./Payload/astreaMobile.app/PkgInfo
+copying file ./Payload/astreaMobile.app/MaterialIcons.ttf ... 
+2021-01-20 19:25:35 +0000  128180 bytes for ./Payload/astreaMobile.app/MaterialIcons.ttf
+2021-01-20 19:25:35 +0000  copying file ./SwiftSupport/iphoneos/libswiftCoreImage.dylib ... 
+2021-01-20 19:25:35 +0000  466448 bytes for ./SwiftSupport/iphoneos/libswiftCoreImage.dylib
+2021-01-20 19:25:35 +0000  copying file ./SwiftSupport/iphoneos/libswiftObjectiveC.dylib ... 
+2021-01-20 19:25:35 +0000  679568 bytes for ./SwiftSupport/iphoneos/libswiftObjectiveC.dylib
+2021-01-20 19:25:35 +0000  copying file ./SwiftSupport/iphoneos/libswiftCore.dylib ... 
+2021-01-20 19:25:39 +0000  95497472 bytes for ./SwiftSupport/iphoneos/libswiftCore.dylib
+2021-01-20 19:25:39 +0000  copying file ./SwiftSupport/iphoneos/libswiftCoreGraphics.dylib ... 
+2021-01-20 19:25:39 +0000  2040928 bytes for ./SwiftSupport/iphoneos/libswiftCoreGraphics.dylib
+2021-01-20 19:25:39 +0000  copying file ./SwiftSupport/iphoneos/libswiftUIKit.dylib ... 
+2021-01-20 19:25:39 +0000  1608688 bytes for ./SwiftSupport/iphoneos/libswiftUIKit.dylib
+2021-01-20 19:25:39 +0000  copying file ./SwiftSupport/iphoneos/libswiftMetal.dylib ... 
+2021-01-20 19:25:39 +0000  724304 bytes for ./SwiftSupport/iphoneos/libswiftMetal.dylib
+2021-01-20 19:25:39 +0000  copying file ./SwiftSupport/iphoneos/libswiftDispatch.dylib ... 
+2021-01-20 19:25:39 +0000  4056784 bytes for ./SwiftSupport/iphoneos/libswiftDispatch.dylib
+2021-01-20 19:25:39 +0000  copying file ./SwiftSupport/iphoneos/libswiftos.dylib ... 
+2021-01-20 19:25:39 +0000  857072 bytes for ./SwiftSupport/iphoneos/libswiftos.dylib
+2021-01-20 19:25:39 +0000  copying file ./SwiftSupport/iphoneos/libswiftCoreFoundation.dylib ... 
+2021-01-20 19:25:39 +0000  450272 bytes for ./SwiftSupport/iphoneos/libswiftCoreFoundation.dylib
+2021-01-20 19:25:39 +0000  copying file ./SwiftSupport/iphoneos/libswiftDarwin.dylib ... 
+2021-01-20 19:25:39 +0000  1091328 bytes for ./SwiftSupport/iphoneos/libswiftDarwin.dylib
+2021-01-20 19:25:39 +0000  copying file ./SwiftSupport/iphoneos/libswiftQuartzCore.dylib ... 
+2021-01-20 19:25:39 +0000  486224 bytes for ./SwiftSupport/iphoneos/libswiftQuartzCore.dylib
+2021-01-20 19:25:39 +0000  copying file ./SwiftSupport/iphoneos/libswiftFoundation.dylib ... 
+2021-01-20 19:25:40 +0000  43094208 bytes for ./SwiftSupport/iphoneos/libswiftFoundation.dylib
+2021-01-20 19:25:40 +0000  /usr/bin/ditto exited with 0
+2021-01-20 19:25:40 +0000  Processing step: IDEDistributionAppStoreInformationStep
+2021-01-20 19:25:40 +0000  Skipping step: IDEDistributionAppStoreInformationStep because it said so
+2021-01-20 19:25:40 +0000  Processing step: IDEDistributionGenerateProcessedDistributionItems
+2021-01-20 19:25:40 +0000  IDEDistributionItem init <DVTFilePath:0x7fc6de63e210:'/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftCoreFoundation.dylib'>
+2021-01-20 19:25:40 +0000  [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0x7fc6de63e210:'/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftCoreFoundation.dylib'>
+2021-01-20 19:25:40 +0000  IDEDistributionItem init <DVTFilePath:0x7fc6de643c00:'/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftQuartzCore.dylib'>
+2021-01-20 19:25:40 +0000  [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0x7fc6de643c00:'/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftQuartzCore.dylib'>
+2021-01-20 19:25:40 +0000  IDEDistributionItem init <DVTFilePath:0x7fc6de63ecf0:'/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftDarwin.dylib'>
+2021-01-20 19:25:40 +0000  [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0x7fc6de63ecf0:'/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftDarwin.dylib'>
+2021-01-20 19:25:40 +0000  IDEDistributionItem init <DVTFilePath:0x7fc6de6388c0:'/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftCoreGraphics.dylib'>
+2021-01-20 19:25:40 +0000  [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0x7fc6de6388c0:'/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftCoreGraphics.dylib'>
+2021-01-20 19:25:40 +0000  IDEDistributionItem init <DVTFilePath:0x7fc6de6387e0:'/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftDispatch.dylib'>
+2021-01-20 19:25:40 +0000  [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0x7fc6de6387e0:'/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftDispatch.dylib'>
+2021-01-20 19:25:40 +0000  IDEDistributionItem init <DVTFilePath:0x7fc6de63d130:'/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftos.dylib'>
+2021-01-20 19:25:40 +0000  [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0x7fc6de63d130:'/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftos.dylib'>
+2021-01-20 19:25:40 +0000  IDEDistributionItem init <DVTFilePath:0x7fc6de639920:'/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftUIKit.dylib'>
+2021-01-20 19:25:40 +0000  [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0x7fc6de639920:'/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftUIKit.dylib'>
+2021-01-20 19:25:40 +0000  IDEDistributionItem init <DVTFilePath:0x7fc6de634df0:'/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftObjectiveC.dylib'>
+2021-01-20 19:25:40 +0000  [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0x7fc6de634df0:'/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftObjectiveC.dylib'>
+2021-01-20 19:25:40 +0000  IDEDistributionItem init <DVTFilePath:0x7fc6de633120:'/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftCoreImage.dylib'>
+2021-01-20 19:25:40 +0000  [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0x7fc6de633120:'/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftCoreImage.dylib'>
+2021-01-20 19:25:40 +0000  IDEDistributionItem init <DVTFilePath:0x7fc6de63b0b0:'/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftMetal.dylib'>
+2021-01-20 19:25:40 +0000  [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0x7fc6de63b0b0:'/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftMetal.dylib'>
+2021-01-20 19:25:40 +0000  IDEDistributionItem init <DVTFilePath:0x7fc6de63c070:'/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftFoundation.dylib'>
+2021-01-20 19:25:41 +0000  [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0x7fc6de63c070:'/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftFoundation.dylib'>
+2021-01-20 19:25:41 +0000  IDEDistributionItem init <DVTFilePath:0x7fc6de6352c0:'/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftCore.dylib'>
+2021-01-20 19:25:41 +0000  [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0x7fc6de6352c0:'/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app/Frameworks/libswiftCore.dylib'>
+2021-01-20 19:25:41 +0000  IDEDistributionItem init <DVTFilePath:0x7fc6de60b850:'/var/folders/gm/yghq9wgd4tn2k3x14wc4mp8m0000gp/T/XcodeDistPipeline.~~~p08frN/Root/Payload/astreaMobile.app'>
+2021-01-20 19:25:41 +0000  Processing step: IDEDistributionCreateManifestStep
+2021-01-20 19:25:41 +0000  Skipping step: IDEDistributionCreateManifestStep because it said so
