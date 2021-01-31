@@ -13,10 +13,13 @@ import {
   BodyContainer,
   ButtomContainer,
   ItemSeparator,
+  LogoutButtom,
 } from './style';
 import Button from '../../components/Button';
 import { useAuth } from '../../hooks/auth';
 import Label from '../../components/Label';
+import CustomIcon from '../../components/CustomIcon';
+import { theme } from '../../utils/constants/themeConstants';
 
 interface Food {
   food_id: number;
@@ -108,7 +111,13 @@ const Home: React.FC = () => {
       </Flex>
 
       <ButtomContainer>
-        <Button onPress={() => signOut()}>Sair</Button>
+        <LogoutButtom onPress={() => signOut()}>
+          <CustomIcon
+            name="logout"
+            iconColor={`${theme.lightColor}`}
+            iconSize={28}
+          />
+        </LogoutButtom>
       </ButtomContainer>
     </Container>
   );

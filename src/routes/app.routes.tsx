@@ -3,6 +3,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import Home from '../pages/Home';
 import FoodDetail from '../pages/FoodDetail';
+import FoodOrderConclude from '../pages/FoodOrderConclude';
 
 const Auth = createStackNavigator();
 
@@ -15,6 +16,7 @@ const AppRoutes: React.FC = () => (
   >
     <Auth.Screen name="Home" component={Home} />
     <Auth.Screen name="FoodDetail" component={FoodDetail} />
+    <Auth.Screen name="FoodOrderConclude" component={FoodOrderConclude} />
   </Auth.Navigator>
 );
 

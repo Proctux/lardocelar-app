@@ -36,4 +36,7 @@ export const ItemSeparator = styled.View`
 export const ButtomContainer = styled.View`
   width: 100%;
   height: 50px;
+  align-items: center;
 `;
+
+export const LogoutButtom = styled.TouchableOpacity``;

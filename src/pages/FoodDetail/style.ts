@@ -3,10 +3,12 @@ import { theme } from '../../utils/constants/themeConstants';
 
 interface HourContainerProps {
   isSelected: boolean;
+  disabled?: boolean;
 }
 
 interface HourTextProps {
   isSelected: boolean;
+  disabled?: boolean;
 }
 
 export const TopContainer = styled.View`
@@ -17,8 +19,8 @@ export const TopContainer = styled.View`
 `;
 
 export const ImageContainer = styled.View`
-  height: 200px;
-  margin: -90px 0;
+  height: 180px;
+  margin: -70px 0;
   align-items: center;
   justify-content: center;
 `;
@@ -50,7 +52,12 @@ export const HourContainer = styled.TouchableOpacity<HourContainerProps>`
 `;
 
 export const HourText = styled.Text<HourTextProps>`
-  color: ${props => (props.isSelected ? theme.darkRedColor : theme.lightColor)};
+  color: ${props =>
+    props.disabled
+      ? '#764D51'
+      : props.isSelected
+        ? theme.darkRedColor
+        : theme.lightColor};
 `;
 
 export const InputContainer = styled.View`
@@ -58,4 +65,10 @@ export const InputContainer = styled.View`
   border-radius: 12px;
   height: 150px;
   margin-top: 12px;
+`;
+
+export const BackButton = styled.TouchableOpacity`
+  width: 32px;
+  height: 32px;
+  margin-bottom: 10px;
 `;

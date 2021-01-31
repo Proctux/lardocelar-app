@@ -2,7 +2,9 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { format, startOfHour, addDays, parseISO } from 'date-fns';
 import { ScrollView } from 'react-native';
+import { useForm, Controller } from 'react-hook-form';
 
+import { useNavigation } from '@react-navigation/native';
 import ItemSeparator from '../../components/ItemSeparator';
 import Label from '../../components/Label';
 import CustomText from '../../components/CustomText';
@@ -15,12 +17,15 @@ import {
   HourContainer,
   HourText,
   InputContainer,
+  BackButton,
 } from './style';
 import Flex from '../../components/Flex';
 import Input from '../../components/Input';
 import QuantityButtom from '../../components/QuantityButtom';
 import Button from '../../components/Button';
 import api from '../../services/api';
+import CustomIcon from '../../components/CustomIcon';
+import { useAuth } from '../../hooks/auth';
 
 interface Props {
   route: any;
@@ -36,6 +41,9 @@ interface Availability {
 const FoodDetail: React.FC<Props> = ({ route }) => {
   // reactotron.log(route);
   const { food } = route.params;
+  const navigation = useNavigation();
+  const { control, handleSubmit, defaultValues } = useForm();
+  const { user } = useAuth();
 
   const [selectedHour, setSelectedHour] = useState(0);
   const [selectedDate, setSelectedDate] = useState(new Date());
@@ -43,27 +51,35 @@ const FoodDetail: React.FC<Props> = ({ route }) => {
 
   const [availability, setAvailability] = useState<Availability[]>([]);
 
-  useEffect(() => {
-    async function loadAvailability() {
-      const response = await api.get(`orders/${food.type}-availability`, {
-        params: {
-          day: String(selectedDate.getDate()),
-          month: String(selectedDate.getMonth() + 1),
-          year: String(selectedDate.getFullYear()),
-        },
-      });
-
-      setAvailability(response.data);
-    }
-
-    loadAvailability();
-  }, [selectedDate]);
-
   const availabilityDateHour = availability.map(({ hour, available }) => ({
     hour,
     available,
     hourFormatted: format(new Date().setHours(hour), 'HH:00'),
   }));
+
+  const handleSubmitForm = useCallback(
+    async (data: any) => {
+      try {
+        const { comments } = data;
+
+        const response = await api.post('orders', {
+          user_id: user.id,
+          food_id: food.id,
+          quantity,
+          comments,
+          date: new Date(selectedDate.setHours(selectedHour)),
+        });
+
+        navigation.navigate('FoodOrderConclude', {
+          order: response.data,
+          food,
+        });
+      } catch (err) {
+        console.log(err);
+      }
+    },
+    [food, navigation, quantity, selectedDate, selectedHour, user.id],
+  );
 
   const handleAddQuantity = useCallback(() => {
     setQuantity(quantity + 1);
@@ -79,10 +95,6 @@ const FoodDetail: React.FC<Props> = ({ route }) => {
     () => `R$${(food.price * quantity).toFixed(2)}`,
     [food.price, quantity],
   );
-
-  useEffect(() => {
-    renderTotalPrice();
-  }, [renderTotalPrice]);
 
   const initialHour = useMemo(() => {
     if (food.type === 'breakfast') return 7;
@@ -121,6 +133,7 @@ const FoodDetail: React.FC<Props> = ({ route }) => {
   const handleSelectedDate = (value: string) => {
     const [day, month] = value.split('/');
     setSelectedDate(parseISO(`${new Date().getFullYear()}-${month}-${day}`));
+    setSelectedHour(0);
   };
 
   const renderDate = (date: string) => (
@@ -134,9 +147,39 @@ const FoodDetail: React.FC<Props> = ({ route }) => {
     </HourContainer>
   );
 
+  const navigateBack = useCallback(() => {
+    navigation.goBack();
+  }, [navigation]);
+
+  useEffect(() => {
+    renderTotalPrice();
+  }, [renderTotalPrice]);
+
+  useEffect(() => {
+    async function loadAvailability() {
+      const response = await api.get(`orders/${food.type}-availability`, {
+        params: {
+          day: String(selectedDate.getDate()),
+          month: String(selectedDate.getMonth() + 1),
+          year: String(selectedDate.getFullYear()),
+        },
+      });
+
+      setAvailability(response.data);
+    }
+
+    loadAvailability();
+  }, [selectedDate]);
+
   return (
     <ScrollView>
-      <TopContainer />
+      <TopContainer>
+        <Flex marginLeft={48}>
+          <BackButton onPress={navigateBack}>
+            <CustomIcon name="chevron-left" iconSize={32} iconColor="gray" />
+          </BackButton>
+        </Flex>
+      </TopContainer>
       <ImageContainer>
         <FoodImage
           source={{ uri: `http://localhost:3333/files/${food.image}` }}
@@ -167,7 +210,10 @@ const FoodDetail: React.FC<Props> = ({ route }) => {
                     isSelected={hour === selectedHour}
                     disabled={!available}
                   >
-                    <HourText isSelected={hour === selectedHour}>
+                    <HourText
+                      disabled={!available}
+                      isSelected={hour === selectedHour}
+                    >
                       {hourFormatted}
                     </HourText>
                   </HourContainer>
@@ -189,6 +235,7 @@ const FoodDetail: React.FC<Props> = ({ route }) => {
               }}
             >
               {renderHourArray.map((dateItem: any, index: number) =>
+                // eslint-disable-next-line prettier/prettier
                 renderDate(format(addDays(dateItem, index), 'dd/MM')))}
             </ScrollView>
           </Flex>
@@ -197,10 +244,18 @@ const FoodDetail: React.FC<Props> = ({ route }) => {
         <Label style={{ fontSize: 16 }}>Observações</Label>
         <ItemSeparator />
         <InputContainer>
-          <Input
-            style={{ height: 148 }}
-            placeholder="Ex: tirar cebola, tomate..."
-            textAlign="center"
+          <Controller
+            control={control}
+            render={({ onChange, value }) => (
+              <Input
+                style={{ height: 148 }}
+                placeholder="Ex: tirar cebola, tomate..."
+                textAlign="center"
+                onChangeText={onChange}
+                value={value}
+              />
+            )}
+            name="comments"
           />
         </InputContainer>
 
@@ -210,7 +265,12 @@ const FoodDetail: React.FC<Props> = ({ route }) => {
             addQuantity={handleAddQuantity}
             removeQuantity={handleRemoveQuantity}
           />
-          <Button style={{ marginLeft: 120 }}>{renderTotalPrice()}</Button>
+          <Button
+            onPress={handleSubmit(handleSubmitForm)}
+            style={{ marginLeft: 120 }}
+          >
+            {renderTotalPrice()}
+          </Button>
         </Flex>
       </Container>
     </ScrollView>

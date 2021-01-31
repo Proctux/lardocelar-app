@@ -6,6 +6,8 @@ interface FlexProps {
   children: React.ReactNode;
   marginBottom?: number;
   marginTop?: number;
+  marginLeft?: number;
+  marginRight?: number;
   alignItems?: string;
   justifyContent?: string;
   flexDirection?: string;
