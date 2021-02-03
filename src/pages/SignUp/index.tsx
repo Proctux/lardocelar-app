@@ -17,7 +17,14 @@ import RoomSelect from '../../components/RoomSelect';
 import signUpHelper from '../../utils/helpers/signUpHelper';
 import api from '../../services/api';
 
-import { Container, SignUpContainer, BackButtonContainer } from './style';
+import {
+  Container,
+  SignUpContainer,
+  BackButtonContainer,
+  BackButton,
+} from './style';
+import CustomIcon from '../../components/CustomIcon';
+import { theme } from '../../utils/constants/themeConstants';
 
 interface RoomProps {
   id: string;
@@ -162,7 +169,13 @@ const SignUp: React.FC = () => {
           </SignUpContainer>
           <Flex marginTop={16}>
             <BackButtonContainer>
-              <Button onPress={handleGoBack}>Voltar</Button>
+              <BackButton onPress={handleGoBack}>
+                <CustomIcon
+                  name="home"
+                  iconColor={theme.lightColor}
+                  iconSize={24}
+                />
+              </BackButton>
             </BackButtonContainer>
           </Flex>
         </Container>
