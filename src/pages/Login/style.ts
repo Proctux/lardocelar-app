@@ -10,14 +10,16 @@ export const Container = styled.View`
 export const CreateAccountButton = styled.TouchableOpacity`
   align-items: center;
   justify-content: center;
+  flex: 1;
   height: 50px;
-  width: 100%;
   background-color: #ccb38d;
   border-radius: 12px;
+  margin: 8px;
 `;
 
 export const ButtomContainer = styled.View`
   height: 50px;
+  padding: 0 8px;
 `;
 
 export const CreateAccountText = styled.Text`
