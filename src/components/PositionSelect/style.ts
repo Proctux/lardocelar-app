@@ -1,4 +1,9 @@
-import styled from 'styled-components/native';
+import styled, { css } from 'styled-components/native';
+import { theme } from '../../utils/constants/themeConstants';
+
+interface PositionSelectorTextProps {
+  placeholder?: boolean;
+}
 
 export const Select = styled.TouchableOpacity`
   height: 50px;
@@ -8,4 +13,14 @@ export const Select = styled.TouchableOpacity`
   justify-content: center;
 `;
 
-export const PositionSelectorText = styled.Text``;
+export const PositionSelectorText = styled.Text<PositionSelectorTextProps>`
+  color: ${theme.lightColor};
+  margin-left: 12px;
+
+  ${props =>
+    // eslint-disable-next-line operator-linebreak
+    props.placeholder &&
+    css`
+      color: ${theme.creamColor};
+    `}
+`;

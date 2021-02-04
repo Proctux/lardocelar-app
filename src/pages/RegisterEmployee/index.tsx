@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { useForm, Controller } from 'react-hook-form';
 import {
   KeyboardAvoidingView,
@@ -13,6 +13,7 @@ import Flex from '../../components/Flex';
 import logoImage from '../../assets/logo.png';
 import Label from '../../components/Label';
 import Button from '../../components/Button';
+import PositionSelect from '../../components/PositionSelect';
 
 import {
   Container,
@@ -22,10 +23,28 @@ import {
 } from './style';
 import CustomIcon from '../../components/CustomIcon';
 import { theme } from '../../utils/constants/themeConstants';
+import registerEmployeeHelper from '../../utils/helpers/registerEmployeeHelper';
+import api from '../../services/api';
 
 const RegisterEmployee: React.FC = () => {
-  const { control, handleSubmit, defaultValues } = useForm();
+  const { control, handleSubmit } = useForm();
   const navigation = useNavigation();
+
+  const handleFormData = useCallback(
+    async data => {
+      const { name, email, password, position } = data;
+
+      await api.post('employees', {
+        name,
+        email,
+        password,
+        position: registerEmployeeHelper[position],
+      });
+
+      navigation.navigate('Login');
+    },
+    [navigation],
+  );
 
   return (
     <KeyboardAvoidingView
@@ -101,20 +120,20 @@ const RegisterEmployee: React.FC = () => {
             />
           </Flex>
 
-          {/* <Flex>
+          <Flex marginTop={12}>
             <Label>Cargo do funcionário</Label>
             <Controller
               control={control}
               render={({ onChange, value }) => (
-
+                <PositionSelect onApply={onChange} selectedPosition={value} />
               )}
               name="position"
               defaultValue={null}
             />
-          </Flex> */}
+          </Flex>
 
           <ButtonContainer>
-            <Button>Cadastrar</Button>
+            <Button onPress={handleSubmit(handleFormData)}>Cadastrar</Button>
           </ButtonContainer>
 
           <BackButtonContainer>

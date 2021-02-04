@@ -66,8 +66,6 @@ const RoomSelectBottomSheet: React.FC<RoomSelectBottomSheetProps> = ({
 
   const parseVipRoomStatus = (status: boolean) => (status ? 'Sim' : 'Não');
 
-  console.log(selectRoom);
-
   const renderItem = ({ item }) => (
     <Card
       isSelected={item.room_number === selectRoom}

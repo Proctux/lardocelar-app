@@ -6,7 +6,7 @@ import { Select, PositionSelectorText } from './style';
 
 interface PositionSelectProps {
   selectedPosition: string;
-  onApply(selectedPosition: string): void;
+  onApply(): void;
 }
 
 const PositionSelect: React.FC<PositionSelectProps> = ({
@@ -17,11 +17,13 @@ const PositionSelect: React.FC<PositionSelectProps> = ({
 
   return (
     <>
-      <Select>
+      <Select onPress={() => setIsVisible(true)}>
         {selectedPosition ? (
           <PositionSelectorText>{selectedPosition}</PositionSelectorText>
         ) : (
-          <PositionSelectorText>Selecione um cargo</PositionSelectorText>
+          <PositionSelectorText placeholder>
+            Selecione um cargo
+          </PositionSelectorText>
         )}
       </Select>
 
@@ -29,7 +31,7 @@ const PositionSelect: React.FC<PositionSelectProps> = ({
         onClose={() => setIsVisible(false)}
         onApply={onApply}
         selectedPosition={selectedPosition}
-        visible={isVsible}
+        isVisible={isVsible}
       />
     </>
   );
