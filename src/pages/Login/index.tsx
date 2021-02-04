@@ -121,11 +121,20 @@ const Login: React.FC = () => {
               </ButtomContainer>
             </Flex>
 
-            <Flex marginTop={24}>
+            <Flex
+              marginTop={8}
+              flexDirection="row"
+              justifyContent="space-evenly"
+            >
               <CreateAccountButton
                 onPress={() => navigation.navigate('SignUp')}
               >
-                <CreateAccountText>Criar uma conta</CreateAccountText>
+                <CreateAccountText>Novo hóspede</CreateAccountText>
+              </CreateAccountButton>
+              <CreateAccountButton
+                onPress={() => navigation.navigate('RegisterEmployee')}
+              >
+                <CreateAccountText>Novo funcionário</CreateAccountText>
               </CreateAccountButton>
             </Flex>
           </Container>

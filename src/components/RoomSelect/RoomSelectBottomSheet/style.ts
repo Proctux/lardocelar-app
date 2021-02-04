@@ -5,6 +5,14 @@ interface ModalContainerProps {
   fullScreen?: boolean;
 }
 
+interface CardProps {
+  isSelected: boolean;
+}
+
+interface CardTextProps {
+  isSelected: boolean;
+}
+
 const SCREE_HEIGHT = Dimensions.get('window').height;
 
 export const ButtomContainer = styled.View`
@@ -15,6 +23,7 @@ export const ButtomContainer = styled.View`
 
 export const ModalContainer = styled.View<ModalContainerProps>`
   ${props =>
+    // eslint-disable-next-line operator-linebreak
     props.fullScreen &&
     css`
       flex: 1;
@@ -24,7 +33,7 @@ export const ModalContainer = styled.View<ModalContainerProps>`
   justify-content: center;
 `;
 
-export const Card = styled.TouchableOpacity`
+export const Card = styled.TouchableOpacity<CardProps>`
   flex: 1;
   flex-direction: row;
   text-align: center;
@@ -35,6 +44,15 @@ export const Card = styled.TouchableOpacity`
   border-radius: 12px;
 
   height: 96px;
+
+  ${props =>
+    // eslint-disable-next-line operator-linebreak
+    props.isSelected &&
+    css`
+      border: 1px solid #fff;
+      border-radius: 12px;
+      background-color: #5e2129;
+    `}
 `;
 
 export const CardImage = styled.Image`
@@ -47,7 +65,14 @@ export const CardInfo = styled.View`
   margin-left: 12px;
 `;
 
-export const CardText = styled.Text`
+export const CardText = styled.Text<CardTextProps>`
   color: #5e2129;
   font-weight: bold;
+
+  ${props =>
+    // eslint-disable-next-line operator-linebreak
+    props.isSelected &&
+    css`
+      color: #ccb38d;
+    `}
 `;

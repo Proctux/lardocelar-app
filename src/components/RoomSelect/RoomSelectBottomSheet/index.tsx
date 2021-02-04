@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { ModalProps, Dimensions, FlatList } from 'react-native';
-import Modal from 'react-native-modal';
-import api from '../../services/api';
+import { ModalProps, FlatList } from 'react-native';
+import api from '../../../services/api';
 
-import Button from '../Button';
+import Button from '../../Button';
+import BottomSheetModal from '../../BottomSheetModal';
 
 import {
   ModalContainer,
@@ -22,14 +22,14 @@ interface RoomProps {
   image: string;
 }
 
-interface BottomSheetProps extends ModalProps {
-  scrollable?: boolean;
+interface RoomSelectBottomSheetProps extends ModalProps {
+  visible: boolean;
   onClose(): void;
   onApply(selectedRoomNumber: number | null): void;
   selectedRoom: number;
 }
 
-const BottomSheet: React.FC<BottomSheetProps> = ({
+const RoomSelectBottomSheet: React.FC<RoomSelectBottomSheetProps> = ({
   visible,
   onClose,
   onApply,
@@ -67,28 +67,28 @@ const BottomSheet: React.FC<BottomSheetProps> = ({
   const parseVipRoomStatus = (status: boolean) => (status ? 'Sim' : 'Não');
 
   const renderItem = ({ item }) => (
-    <Card onPress={() => handleOnPressCard(item)}>
+    <Card
+      isSelected={item.room_number === selectRoom}
+      onPress={() => handleOnPressCard(item)}
+    >
       <CardImage
         source={{
           uri: `http://localhost:3333/files/${item.image}`,
         }}
       />
       <CardInfo>
-        <CardText>{`Número do quarto: ${item.room_number}`}</CardText>
-        <CardText>{`Quarto VIP: ${parseVipRoomStatus(item.vip)}`}</CardText>
+        <CardText isSelected={item.room_number === selectRoom}>
+          {`Número do quarto: ${item.room_number}`}
+        </CardText>
+        <CardText isSelected={item.room_number === selectRoom}>
+          {`Quarto VIP: ${parseVipRoomStatus(item.vip)}`}
+        </CardText>
       </CardInfo>
     </Card>
   );
 
   return (
-    <Modal
-      isVisible={visible}
-      deviceHeight={Dimensions.get('window').height}
-      deviceWidth={Dimensions.get('window').width}
-      style={{ margin: 0 }}
-      useNativeDriver
-      avoidKeyboard
-    >
+    <BottomSheetModal isVisible={visible}>
       <ModalContainer>
         <FlatList
           data={rooms}
@@ -97,8 +97,8 @@ const BottomSheet: React.FC<BottomSheetProps> = ({
         />
         {renderButtoms()}
       </ModalContainer>
-    </Modal>
+    </BottomSheetModal>
   );
 };
 
-export default BottomSheet;
+export default RoomSelectBottomSheet;

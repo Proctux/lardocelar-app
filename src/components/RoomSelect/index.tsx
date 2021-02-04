@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import BottomSheet from '../BottomSheet';
+import RoomSelectBottomSheet from './RoomSelectBottomSheet';
 
 import {
   RoomSelector,
@@ -9,7 +9,7 @@ import {
 } from './style';
 
 interface RoomSelectProps {
-  onApply(selectedRoom: number): void;
+  onApply(): void;
   selectedRoom: number;
 }
 
@@ -28,7 +28,7 @@ const RoomSelect: React.FC<RoomSelectProps> = ({ onApply, selectedRoom }) => {
         )}
       </RoomSelector>
 
-      <BottomSheet
+      <RoomSelectBottomSheet
         visible={isVisible}
         onClose={() => setIsVisible(false)}
         onApply={onApply}
