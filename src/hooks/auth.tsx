@@ -11,11 +11,11 @@ import api from '../services/api';
 interface User {
   id: string;
   name: string;
-  type: string;
   password: string;
   email: string;
   avatar: string;
-  room_id: string;
+  room_id?: string;
+  position?: string;
 }
 
 interface AuthState {

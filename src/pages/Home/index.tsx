@@ -1,51 +1,21 @@
 import React, { useState, useEffect } from 'react';
 
-import CustomText from '../../components/CustomText';
-import FoodScrollView from '../../components/FoodScrollView';
-import Flex from '../../components/Flex';
 import api from '../../services/api';
-
-import {
-  Container,
-  HeaderContainer,
-  ImageContainer,
-  HeaderContainerFields,
-  BodyContainer,
-  ButtomContainer,
-  ItemSeparator,
-  LogoutButtom,
-} from './style';
-import Button from '../../components/Button';
 import { useAuth } from '../../hooks/auth';
-import Label from '../../components/Label';
 import CustomIcon from '../../components/CustomIcon';
 import { theme } from '../../utils/constants/themeConstants';
+import EmployeeHome from '../../components/EmployeeHome';
+import UserHome from '../../components/UserHome';
 
-interface Food {
-  food_id: number;
-  name: string;
-  stock: number;
-  price: number;
-}
+import { User } from '../../utils/dtos/user';
+import { Food } from '../../utils/dtos/foods';
+import { Room } from '../../utils/dtos/rooms';
 
-interface User {
-  id: string;
-  name: string;
-  email: string;
-  avatar: string;
-  room_id: string;
-}
-
-interface Room {
-  room_number: number;
-  busy: boolean;
-  vip: boolean;
-  id: string;
-}
+import { Container, ButtomContainer, LogoutButtom } from './style';
 
 const Home: React.FC = () => {
   const [foods, setFoods] = useState<Food[]>([]);
-  const [guest, setGuest] = useState<User>({} as User);
+  const [userInfo, setUserInfo] = useState<User>({} as User);
   const [roomsList, setRoomsList] = useState<Room[]>([]);
 
   const { signOut, user } = useAuth();
@@ -57,7 +27,7 @@ const Home: React.FC = () => {
 
       setFoods(response.data);
       setRoomsList(responseRooms.data);
-      setGuest(user);
+      setUserInfo(user);
     }
 
     loadFoodsAndRooms();
@@ -69,46 +39,15 @@ const Home: React.FC = () => {
 
   return (
     <Container>
-      <Flex marginBottom={40} alignItems="center" justifyContent="center">
-        <HeaderContainer>
-          <ImageContainer
-            source={{ uri: `http://localhost:3333/files/${user.avatar}` }}
-          />
-
-          <HeaderContainerFields>
-            <CustomText color="#CCB38D">{`Hospede: ${guest.name}`}</CustomText>
-            <CustomText color="#CCB38D" fontSize={18}>
-              {`Quarto: ${filteredRoom}`}
-            </CustomText>
-          </HeaderContainerFields>
-        </HeaderContainer>
-      </Flex>
-
-      <Flex marginBottom={48}>
-        <BodyContainer>
-          <Flex marginBottom={12}>
-            <Label>Café da manhã</Label>
-            <ItemSeparator />
-            <Flex marginTop={12} alignItems="center">
-              <FoodScrollView type="breakfast" foodsData={foods} />
-            </Flex>
-          </Flex>
-
-          <Flex marginBottom={12}>
-            <Label>Almoço</Label>
-            <ItemSeparator />
-            <Flex marginTop={12} alignItems="center">
-              <FoodScrollView type="lunch" foodsData={foods} />
-            </Flex>
-          </Flex>
-
-          <Label>Jantar</Label>
-          <ItemSeparator />
-          <Flex marginTop={12} alignItems="center">
-            <FoodScrollView type="dinner" foodsData={foods} />
-          </Flex>
-        </BodyContainer>
-      </Flex>
+      {user.position ? (
+        <EmployeeHome userInfo={userInfo} foods={foods} />
+      ) : (
+        <UserHome
+          userInfo={userInfo}
+          foods={foods}
+          filteredRoom={filteredRoom}
+        />
+      )}
 
       <ButtomContainer>
         <LogoutButtom onPress={() => signOut()}>
